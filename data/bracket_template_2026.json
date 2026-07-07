@@ -1,0 +1,226 @@
+[
+  {
+    "slotId": "R32-01",
+    "matchNo": 73,
+    "round": "R32",
+    "homeSource": "2A",
+    "awaySource": "2B",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "GROUP_POSITION",
+    "thirdPlacePool": null,
+    "nextWinnerSlotId": "R16-01"
+  },
+  {
+    "slotId": "R32-02",
+    "matchNo": 74,
+    "round": "R32",
+    "homeSource": "1E",
+    "awaySource": "3ABCDF",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "BEST_THIRD_COMBINATION",
+    "thirdPlacePool": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "F"
+    ],
+    "nextWinnerSlotId": "R16-01"
+  },
+  {
+    "slotId": "R32-03",
+    "matchNo": 75,
+    "round": "R32",
+    "homeSource": "1F",
+    "awaySource": "2C",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "GROUP_POSITION",
+    "thirdPlacePool": null,
+    "nextWinnerSlotId": "R16-02"
+  },
+  {
+    "slotId": "R32-04",
+    "matchNo": 76,
+    "round": "R32",
+    "homeSource": "1C",
+    "awaySource": "2F",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "GROUP_POSITION",
+    "thirdPlacePool": null,
+    "nextWinnerSlotId": "R16-02"
+  },
+  {
+    "slotId": "R32-05",
+    "matchNo": 77,
+    "round": "R32",
+    "homeSource": "1I",
+    "awaySource": "3CDFGH",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "BEST_THIRD_COMBINATION",
+    "thirdPlacePool": [
+      "C",
+      "D",
+      "F",
+      "G",
+      "H"
+    ],
+    "nextWinnerSlotId": "R16-03"
+  },
+  {
+    "slotId": "R32-06",
+    "matchNo": 78,
+    "round": "R32",
+    "homeSource": "2E",
+    "awaySource": "2I",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "GROUP_POSITION",
+    "thirdPlacePool": null,
+    "nextWinnerSlotId": "R16-03"
+  },
+  {
+    "slotId": "R32-07",
+    "matchNo": 79,
+    "round": "R32",
+    "homeSource": "1A",
+    "awaySource": "3CEFHI",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "BEST_THIRD_COMBINATION",
+    "thirdPlacePool": [
+      "C",
+      "E",
+      "F",
+      "H",
+      "I"
+    ],
+    "nextWinnerSlotId": "R16-04"
+  },
+  {
+    "slotId": "R32-08",
+    "matchNo": 80,
+    "round": "R32",
+    "homeSource": "1L",
+    "awaySource": "3EHIJK",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "BEST_THIRD_COMBINATION",
+    "thirdPlacePool": [
+      "E",
+      "H",
+      "I",
+      "J",
+      "K"
+    ],
+    "nextWinnerSlotId": "R16-04"
+  },
+  {
+    "slotId": "R32-09",
+    "matchNo": 81,
+    "round": "R32",
+    "homeSource": "1D",
+    "awaySource": "3BEFIJ",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "BEST_THIRD_COMBINATION",
+    "thirdPlacePool": [
+      "B",
+      "E",
+      "F",
+      "I",
+      "J"
+    ],
+    "nextWinnerSlotId": "R16-05"
+  },
+  {
+    "slotId": "R32-10",
+    "matchNo": 82,
+    "round": "R32",
+    "homeSource": "1G",
+    "awaySource": "3AEHIJ",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "BEST_THIRD_COMBINATION",
+    "thirdPlacePool": [
+      "A",
+      "E",
+      "H",
+      "I",
+      "J"
+    ],
+    "nextWinnerSlotId": "R16-05"
+  },
+  {
+    "slotId": "R32-11",
+    "matchNo": 83,
+    "round": "R32",
+    "homeSource": "2K",
+    "awaySource": "2L",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "GROUP_POSITION",
+    "thirdPlacePool": null,
+    "nextWinnerSlotId": "R16-06"
+  },
+  {
+    "slotId": "R32-12",
+    "matchNo": 84,
+    "round": "R32",
+    "homeSource": "1H",
+    "awaySource": "2J",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "GROUP_POSITION",
+    "thirdPlacePool": null,
+    "nextWinnerSlotId": "R16-06"
+  },
+  {
+    "slotId": "R32-13",
+    "matchNo": 85,
+    "round": "R32",
+    "homeSource": "1B",
+    "awaySource": "3EFGIJ",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "BEST_THIRD_COMBINATION",
+    "thirdPlacePool": [
+      "E",
+      "F",
+      "G",
+      "I",
+      "J"
+    ],
+    "nextWinnerSlotId": "R16-07"
+  },
+  {
+    "slotId": "R32-14",
+    "matchNo": 86,
+    "round": "R32",
+    "homeSource": "1J",
+    "awaySource": "2H",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "GROUP_POSITION",
+    "thirdPlacePool": null,
+    "nextWinnerSlotId": "R16-07"
+  },
+  {
+    "slotId": "R32-15",
+    "matchNo": 87,
+    "round": "R32",
+    "homeSource": "1K",
+    "awaySource": "3DEIJL",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "BEST_THIRD_COMBINATION",
+    "thirdPlacePool": [
+      "D",
+      "E",
+      "I",
+      "J",
+      "L"
+    ],
+    "nextWinnerSlotId": "R16-08"
+  },
+  {
+    "slotId": "R32-16",
+    "matchNo": 88,
+    "round": "R32",
+    "homeSource": "2D",
+    "awaySource": "2G",
+    "homeSourceType": "GROUP_POSITION",
+    "awaySourceType": "GROUP_POSITION",
+    "thirdPlacePool": null,
+    "nextWinnerSlotId": "R16-08"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "name": "porra-mundial-2026",
+  "version": "1.0.0",
+  "description": "Porra Mundial 2026",
+  "type": "module",
+  "scripts": {
+    "extract": "node scripts/extractExcel.mjs",
+    "validate": "node scripts/validateGroupScoring.mjs",
+    "validate:knockout": "node scripts/validateKnockoutScoring.mjs",
+    "privacy": "node scripts/checkPublicDataPrivacy.mjs",
+    "test": "vitest run",
+    "serve": "node scripts/serveLocal.mjs",
+    "check:frontend": "node scripts/checkFrontendData.mjs",
+    "check:all": "node scripts/checkAll.mjs"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "vitest": "^1.6.0"
+  }
+}

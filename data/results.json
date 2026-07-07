@@ -1,0 +1,362 @@
+[
+  {
+    "matchId": "GROUP-001",
+    "homeGoals": 2,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-002",
+    "homeGoals": 2,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-003",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-004",
+    "homeGoals": 1,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-005",
+    "homeGoals": 0,
+    "awayGoals": 3
+  },
+  {
+    "matchId": "GROUP-006",
+    "homeGoals": 1,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-007",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-008",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-009",
+    "homeGoals": 4,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-010",
+    "homeGoals": 6,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-011",
+    "homeGoals": 2,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-012",
+    "homeGoals": 3,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-013",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-014",
+    "homeGoals": 0,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-015",
+    "homeGoals": 0,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-016",
+    "homeGoals": 3,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-017",
+    "homeGoals": 0,
+    "awayGoals": 3
+  },
+  {
+    "matchId": "GROUP-018",
+    "homeGoals": 4,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-019",
+    "homeGoals": 4,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-020",
+    "homeGoals": 2,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-021",
+    "homeGoals": 2,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-022",
+    "homeGoals": 0,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-023",
+    "homeGoals": 3,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-024",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-025",
+    "homeGoals": 7,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-026",
+    "homeGoals": 1,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-027",
+    "homeGoals": 2,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-028",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-029",
+    "homeGoals": 0,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-030",
+    "homeGoals": 2,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-031",
+    "homeGoals": 2,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-032",
+    "homeGoals": 5,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-033",
+    "homeGoals": 5,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-034",
+    "homeGoals": 0,
+    "awayGoals": 4
+  },
+  {
+    "matchId": "GROUP-035",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-036",
+    "homeGoals": 1,
+    "awayGoals": 3
+  },
+  {
+    "matchId": "GROUP-037",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-038",
+    "homeGoals": 2,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-039",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-040",
+    "homeGoals": 1,
+    "awayGoals": 3
+  },
+  {
+    "matchId": "GROUP-041",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-042",
+    "homeGoals": 1,
+    "awayGoals": 5
+  },
+  {
+    "matchId": "GROUP-043",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-044",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-045",
+    "homeGoals": 4,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-046",
+    "homeGoals": 2,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-047",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-048",
+    "homeGoals": 0,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-049",
+    "homeGoals": 3,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-050",
+    "homeGoals": 1,
+    "awayGoals": 4
+  },
+  {
+    "matchId": "GROUP-051",
+    "homeGoals": 3,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-052",
+    "homeGoals": 3,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-053",
+    "homeGoals": 1,
+    "awayGoals": 4
+  },
+  {
+    "matchId": "GROUP-054",
+    "homeGoals": 5,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-055",
+    "homeGoals": 3,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-056",
+    "homeGoals": 3,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-057",
+    "homeGoals": 2,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-058",
+    "homeGoals": 1,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-059",
+    "homeGoals": 3,
+    "awayGoals": 3
+  },
+  {
+    "matchId": "GROUP-060",
+    "homeGoals": 1,
+    "awayGoals": 3
+  },
+  {
+    "matchId": "GROUP-061",
+    "homeGoals": 1,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-062",
+    "homeGoals": 1,
+    "awayGoals": 3
+  },
+  {
+    "matchId": "GROUP-063",
+    "homeGoals": 5,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-064",
+    "homeGoals": 1,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-065",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-066",
+    "homeGoals": 3,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-067",
+    "homeGoals": 4,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-068",
+    "homeGoals": 1,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-069",
+    "homeGoals": 0,
+    "awayGoals": 0
+  },
+  {
+    "matchId": "GROUP-070",
+    "homeGoals": 0,
+    "awayGoals": 1
+  },
+  {
+    "matchId": "GROUP-071",
+    "homeGoals": 0,
+    "awayGoals": 2
+  },
+  {
+    "matchId": "GROUP-072",
+    "homeGoals": 2,
+    "awayGoals": 1
+  }
+]

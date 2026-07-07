@@ -1,0 +1,226 @@
+[
+  {
+    "slotId": "R32-01",
+    "round": "R32",
+    "date": "2026-06-28",
+    "kickoffTime": "21:00",
+    "kickoffDateTime": "2026-06-28T21:00:00"
+  },
+  {
+    "slotId": "R32-02",
+    "round": "R32",
+    "date": "2026-06-29",
+    "kickoffTime": "19:00",
+    "kickoffDateTime": "2026-06-29T19:00:00"
+  },
+  {
+    "slotId": "R32-03",
+    "round": "R32",
+    "date": "2026-06-29",
+    "kickoffTime": "22:30",
+    "kickoffDateTime": "2026-06-29T22:30:00"
+  },
+  {
+    "slotId": "R32-04",
+    "round": "R32",
+    "date": "2026-06-30",
+    "kickoffTime": "03:00",
+    "kickoffDateTime": "2026-06-30T03:00:00"
+  },
+  {
+    "slotId": "R32-05",
+    "round": "R32",
+    "date": "2026-06-30",
+    "kickoffTime": "19:00",
+    "kickoffDateTime": "2026-06-30T19:00:00"
+  },
+  {
+    "slotId": "R32-06",
+    "round": "R32",
+    "date": "2026-06-30",
+    "kickoffTime": "23:00",
+    "kickoffDateTime": "2026-06-30T23:00:00"
+  },
+  {
+    "slotId": "R32-07",
+    "round": "R32",
+    "date": "2026-07-01",
+    "kickoffTime": "03:00",
+    "kickoffDateTime": "2026-07-01T03:00:00"
+  },
+  {
+    "slotId": "R32-08",
+    "round": "R32",
+    "date": "2026-07-01",
+    "kickoffTime": "18:00",
+    "kickoffDateTime": "2026-07-01T18:00:00"
+  },
+  {
+    "slotId": "R32-09",
+    "round": "R32",
+    "date": "2026-07-01",
+    "kickoffTime": "22:00",
+    "kickoffDateTime": "2026-07-01T22:00:00"
+  },
+  {
+    "slotId": "R32-10",
+    "round": "R32",
+    "date": "2026-07-02",
+    "kickoffTime": "02:00",
+    "kickoffDateTime": "2026-07-02T02:00:00"
+  },
+  {
+    "slotId": "R32-11",
+    "round": "R32",
+    "date": "2026-07-02",
+    "kickoffTime": "21:00",
+    "kickoffDateTime": "2026-07-02T21:00:00"
+  },
+  {
+    "slotId": "R32-12",
+    "round": "R32",
+    "date": "2026-07-03",
+    "kickoffTime": "01:00",
+    "kickoffDateTime": "2026-07-03T01:00:00"
+  },
+  {
+    "slotId": "R32-13",
+    "round": "R32",
+    "date": "2026-07-03",
+    "kickoffTime": "05:00",
+    "kickoffDateTime": "2026-07-03T05:00:00"
+  },
+  {
+    "slotId": "R32-14",
+    "round": "R32",
+    "date": "2026-07-03",
+    "kickoffTime": "20:00",
+    "kickoffDateTime": "2026-07-03T20:00:00"
+  },
+  {
+    "slotId": "R32-15",
+    "round": "R32",
+    "date": "2026-07-04",
+    "kickoffTime": null,
+    "kickoffDateTime": null
+  },
+  {
+    "slotId": "R32-16",
+    "round": "R32",
+    "date": "2026-07-04",
+    "kickoffTime": "03:30",
+    "kickoffDateTime": "2026-07-04T03:30:00"
+  },
+  {
+    "slotId": "R16-01",
+    "round": "R16",
+    "date": "2026-07-04",
+    "kickoffTime": "19:00",
+    "kickoffDateTime": "2026-07-04T19:00:00"
+  },
+  {
+    "slotId": "R16-02",
+    "round": "R16",
+    "date": "2026-07-04",
+    "kickoffTime": "23:00",
+    "kickoffDateTime": "2026-07-04T23:00:00"
+  },
+  {
+    "slotId": "R16-03",
+    "round": "R16",
+    "date": "2026-07-05",
+    "kickoffTime": "22:00",
+    "kickoffDateTime": "2026-07-05T22:00:00"
+  },
+  {
+    "slotId": "R16-04",
+    "round": "R16",
+    "date": "2026-07-06",
+    "kickoffTime": "02:00",
+    "kickoffDateTime": "2026-07-06T02:00:00"
+  },
+  {
+    "slotId": "R16-05",
+    "round": "R16",
+    "date": "2026-07-06",
+    "kickoffTime": "21:00",
+    "kickoffDateTime": "2026-07-06T21:00:00"
+  },
+  {
+    "slotId": "R16-06",
+    "round": "R16",
+    "date": "2026-07-07",
+    "kickoffTime": "02:00",
+    "kickoffDateTime": "2026-07-07T02:00:00"
+  },
+  {
+    "slotId": "R16-07",
+    "round": "R16",
+    "date": "2026-07-07",
+    "kickoffTime": "18:00",
+    "kickoffDateTime": "2026-07-07T18:00:00"
+  },
+  {
+    "slotId": "R16-08",
+    "round": "R16",
+    "date": "2026-07-07",
+    "kickoffTime": "22:00",
+    "kickoffDateTime": "2026-07-07T22:00:00"
+  },
+  {
+    "slotId": "QF-01",
+    "round": "QF",
+    "date": "2026-07-09",
+    "kickoffTime": "22:00",
+    "kickoffDateTime": "2026-07-09T22:00:00"
+  },
+  {
+    "slotId": "QF-02",
+    "round": "QF",
+    "date": "2026-07-10",
+    "kickoffTime": "21:00",
+    "kickoffDateTime": "2026-07-10T21:00:00"
+  },
+  {
+    "slotId": "QF-03",
+    "round": "QF",
+    "date": "2026-07-11",
+    "kickoffTime": "23:00",
+    "kickoffDateTime": "2026-07-11T23:00:00"
+  },
+  {
+    "slotId": "QF-04",
+    "round": "QF",
+    "date": "2026-07-12",
+    "kickoffTime": "03:00",
+    "kickoffDateTime": "2026-07-12T03:00:00"
+  },
+  {
+    "slotId": "SF-01",
+    "round": "SF",
+    "date": "2026-07-14",
+    "kickoffTime": "21:00",
+    "kickoffDateTime": "2026-07-14T21:00:00"
+  },
+  {
+    "slotId": "SF-02",
+    "round": "SF",
+    "date": "2026-07-15",
+    "kickoffTime": "21:00",
+    "kickoffDateTime": "2026-07-15T21:00:00"
+  },
+  {
+    "slotId": "THIRD_PLACE",
+    "round": "THIRD_PLACE",
+    "date": "2026-07-18",
+    "kickoffTime": "23:00",
+    "kickoffDateTime": "2026-07-18T23:00:00"
+  },
+  {
+    "slotId": "FINAL",
+    "round": "FINAL",
+    "date": "2026-07-19",
+    "kickoffTime": "21:00",
+    "kickoffDateTime": "2026-07-19T21:00:00"
+  }
+]

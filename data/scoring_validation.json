@@ -1,0 +1,285 @@
+{
+  "summary": {
+    "participantsCount": 45,
+    "groupMatchesCount": 72,
+    "resultsCount": 72,
+    "predictionsCount": 3240,
+    "participantTotalExactMatches": 45,
+    "participantTotalDiscrepancies": 0,
+    "perMatchExactMatches": 3240,
+    "perMatchDiscrepancies": 0
+  },
+  "participantDetails": [
+    {
+      "participantId": "Menuda_Porra_la_de_AHR",
+      "excelTotal": 320,
+      "jsTotal": 320,
+      "diff": 0
+    },
+    {
+      "participantId": "Amadeo Carboni",
+      "excelTotal": 310,
+      "jsTotal": 310,
+      "diff": 0
+    },
+    {
+      "participantId": "Ana",
+      "excelTotal": 240,
+      "jsTotal": 240,
+      "diff": 0
+    },
+    {
+      "participantId": "Sporting La Carlota",
+      "excelTotal": 360,
+      "jsTotal": 360,
+      "diff": 0
+    },
+    {
+      "participantId": "AMG",
+      "excelTotal": 300,
+      "jsTotal": 300,
+      "diff": 0
+    },
+    {
+      "participantId": "BMR",
+      "excelTotal": 250,
+      "jsTotal": 250,
+      "diff": 0
+    },
+    {
+      "participantId": "Blanca",
+      "excelTotal": 265,
+      "jsTotal": 265,
+      "diff": 0
+    },
+    {
+      "participantId": "GUARDIOLISMO",
+      "excelTotal": 375,
+      "jsTotal": 375,
+      "diff": 0
+    },
+    {
+      "participantId": "Er Nómina",
+      "excelTotal": 320,
+      "jsTotal": 320,
+      "diff": 0
+    },
+    {
+      "participantId": "Chema3D",
+      "excelTotal": 305,
+      "jsTotal": 305,
+      "diff": 0
+    },
+    {
+      "participantId": "Cristóbal López",
+      "excelTotal": 355,
+      "jsTotal": 355,
+      "diff": 0
+    },
+    {
+      "participantId": "Estefania Becerra Garcia",
+      "excelTotal": 330,
+      "jsTotal": 330,
+      "diff": 0
+    },
+    {
+      "participantId": "Francisco Carrasco",
+      "excelTotal": 310,
+      "jsTotal": 310,
+      "diff": 0
+    },
+    {
+      "participantId": "Fran Delineación",
+      "excelTotal": 240,
+      "jsTotal": 240,
+      "diff": 0
+    },
+    {
+      "participantId": "La mejor de electricidad",
+      "excelTotal": 315,
+      "jsTotal": 315,
+      "diff": 0
+    },
+    {
+      "participantId": "Frente Perolete",
+      "excelTotal": 340,
+      "jsTotal": 340,
+      "diff": 0
+    },
+    {
+      "participantId": "Brioso",
+      "excelTotal": 300,
+      "jsTotal": 300,
+      "diff": 0
+    },
+    {
+      "participantId": "IreBetis",
+      "excelTotal": 250,
+      "jsTotal": 250,
+      "diff": 0
+    },
+    {
+      "participantId": "La_Gran_Porra_De_Isra",
+      "excelTotal": 375,
+      "jsTotal": 375,
+      "diff": 0
+    },
+    {
+      "participantId": "Antequera",
+      "excelTotal": 325,
+      "jsTotal": 325,
+      "diff": 0
+    },
+    {
+      "participantId": "Javier Alcala",
+      "excelTotal": 290,
+      "jsTotal": 290,
+      "diff": 0
+    },
+    {
+      "participantId": "Jugada Ganadora",
+      "excelTotal": 330,
+      "jsTotal": 330,
+      "diff": 0
+    },
+    {
+      "participantId": "JMA",
+      "excelTotal": 385,
+      "jsTotal": 385,
+      "diff": 0
+    },
+    {
+      "participantId": "raul pizarroso",
+      "excelTotal": 330,
+      "jsTotal": 330,
+      "diff": 0
+    },
+    {
+      "participantId": "JOAQUIN",
+      "excelTotal": 305,
+      "jsTotal": 305,
+      "diff": 0
+    },
+    {
+      "participantId": "Jordim22",
+      "excelTotal": 355,
+      "jsTotal": 355,
+      "diff": 0
+    },
+    {
+      "participantId": "José Manuel Álvarez de la Fuent",
+      "excelTotal": 295,
+      "jsTotal": 295,
+      "diff": 0
+    },
+    {
+      "participantId": "COPASO",
+      "excelTotal": 300,
+      "jsTotal": 300,
+      "diff": 0
+    },
+    {
+      "participantId": "Kamikaze",
+      "excelTotal": 325,
+      "jsTotal": 325,
+      "diff": 0
+    },
+    {
+      "participantId": "Jose Maria Diaz Antunez",
+      "excelTotal": 240,
+      "jsTotal": 240,
+      "diff": 0
+    },
+    {
+      "participantId": "Juan Ruiz Torres",
+      "excelTotal": 425,
+      "jsTotal": 425,
+      "diff": 0
+    },
+    {
+      "participantId": "La Italiana",
+      "excelTotal": 330,
+      "jsTotal": 330,
+      "diff": 0
+    },
+    {
+      "participantId": "Luigi \"EL EXTERNO\"",
+      "excelTotal": 260,
+      "jsTotal": 260,
+      "diff": 0
+    },
+    {
+      "participantId": "Manucostcorron",
+      "excelTotal": 355,
+      "jsTotal": 355,
+      "diff": 0
+    },
+    {
+      "participantId": "Los lunares",
+      "excelTotal": 305,
+      "jsTotal": 305,
+      "diff": 0
+    },
+    {
+      "participantId": "La Ceja de Carleto",
+      "excelTotal": 280,
+      "jsTotal": 280,
+      "diff": 0
+    },
+    {
+      "participantId": "Omar",
+      "excelTotal": 260,
+      "jsTotal": 260,
+      "diff": 0
+    },
+    {
+      "participantId": "PP",
+      "excelTotal": 240,
+      "jsTotal": 240,
+      "diff": 0
+    },
+    {
+      "participantId": "Pablo López Ríos",
+      "excelTotal": 305,
+      "jsTotal": 305,
+      "diff": 0
+    },
+    {
+      "participantId": "Pablo Molina Díaz",
+      "excelTotal": 285,
+      "jsTotal": 285,
+      "diff": 0
+    },
+    {
+      "participantId": "PAULA",
+      "excelTotal": 280,
+      "jsTotal": 280,
+      "diff": 0
+    },
+    {
+      "participantId": "The Water MBA",
+      "excelTotal": 295,
+      "jsTotal": 295,
+      "diff": 0
+    },
+    {
+      "participantId": "Si Se Puede!",
+      "excelTotal": 330,
+      "jsTotal": 330,
+      "diff": 0
+    },
+    {
+      "participantId": "SISEPUEDE2",
+      "excelTotal": 280,
+      "jsTotal": 280,
+      "diff": 0
+    },
+    {
+      "participantId": "SPO",
+      "excelTotal": 260,
+      "jsTotal": 260,
+      "diff": 0
+    }
+  ],
+  "perMatchDiscrepancyDetails": []
+}

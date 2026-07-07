@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porra Mundial 2026</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="header-content">
+            <h1>Porra Mundial 2026</h1>
+            <p class="subtitle">Ranking, apuestas y seguimiento en directo</p>
+            <div id="status-bar" class="status-bar">
+                <span>Cargando datos...</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="app-container" class="container">
+        <!-- Vistas dinámicas se inyectan aquí -->
+    </main>
+
+    <!-- Templates -->
+    <template id="ranking-template">
+        <div class="ranking-view">
+            <div class="filters">
+                <input type="text" id="search-participant" placeholder="Buscar participante..." class="search-input">
+            </div>
+            <div class="table-container">
+                <table class="ranking-table">
+                    <thead>
+                        <tr>
+                            <th>Pos</th>
+                            <th>Participante</th>
+                            <th>Total</th>
+                            <th>Grupos</th>
+                            <th>16avos</th>
+                            <th>8os</th>
+                            <th>4os</th>
+                            <th>Semis</th>
+                            <th>3er</th>
+                            <th>Final</th>
+                            <th>Campeón</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ranking-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </template>
+
+    <template id="participant-template">
+        <div class="participant-view">
+            <button id="back-btn" class="btn-back">← Volver al Ranking</button>
+            <div id="participant-header" class="card participant-panel">
+                <!-- Se inyecta info del participante -->
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-target="group-stage">Fase de Grupos</button>
+                <button class="tab-btn" data-target="knockout-stage">Eliminatorias</button>
+            </div>
+
+            <div id="group-stage" class="tab-content active">
+                <div id="group-standings-container" class="standings-grid"></div>
+                <div id="group-matches-container" class="matches-list"></div>
+            </div>
+
+            <div id="knockout-stage" class="tab-content">
+                <div id="knockout-bracket-container" class="bracket-list"></div>
+            </div>
+        </div>
+    </template>
+
+    <script type="module" src="src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,767 @@
+[
+  {
+    "participantId": "Juan Ruiz Torres",
+    "displayName": "Juan Ruiz Torres",
+    "groupPoints": 425,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 425,
+    "rank": 1
+  },
+  {
+    "participantId": "JMA",
+    "displayName": "JMA",
+    "groupPoints": 385,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 385,
+    "rank": 2
+  },
+  {
+    "participantId": "GUARDIOLISMO",
+    "displayName": "GUARDIOLISMO",
+    "groupPoints": 375,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 375,
+    "rank": 3
+  },
+  {
+    "participantId": "La_Gran_Porra_De_Isra",
+    "displayName": "La_Gran_Porra_De_Isra",
+    "groupPoints": 375,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 375,
+    "rank": 3
+  },
+  {
+    "participantId": "Sporting La Carlota",
+    "displayName": "Sporting La Carlota",
+    "groupPoints": 360,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 360,
+    "rank": 5
+  },
+  {
+    "participantId": "Cristóbal López",
+    "displayName": "Cristóbal López",
+    "groupPoints": 355,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 355,
+    "rank": 6
+  },
+  {
+    "participantId": "Jordim22",
+    "displayName": "Jordim22",
+    "groupPoints": 355,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 355,
+    "rank": 6
+  },
+  {
+    "participantId": "Manucostcorron",
+    "displayName": "Manucostcorron",
+    "groupPoints": 355,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 355,
+    "rank": 6
+  },
+  {
+    "participantId": "Frente Perolete",
+    "displayName": "Frente Perolete",
+    "groupPoints": 340,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 340,
+    "rank": 9
+  },
+  {
+    "participantId": "Estefania Becerra Garcia",
+    "displayName": "Estefania Becerra Garcia",
+    "groupPoints": 330,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 330,
+    "rank": 10
+  },
+  {
+    "participantId": "Jugada Ganadora",
+    "displayName": "Jugada Ganadora",
+    "groupPoints": 330,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 330,
+    "rank": 10
+  },
+  {
+    "participantId": "La Italiana",
+    "displayName": "La Italiana",
+    "groupPoints": 330,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 330,
+    "rank": 10
+  },
+  {
+    "participantId": "raul pizarroso",
+    "displayName": "raul pizarroso",
+    "groupPoints": 330,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 330,
+    "rank": 10
+  },
+  {
+    "participantId": "Si Se Puede!",
+    "displayName": "Si Se Puede!",
+    "groupPoints": 330,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 330,
+    "rank": 10
+  },
+  {
+    "participantId": "Antequera",
+    "displayName": "Antequera",
+    "groupPoints": 325,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 325,
+    "rank": 15
+  },
+  {
+    "participantId": "Kamikaze",
+    "displayName": "Kamikaze",
+    "groupPoints": 325,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 325,
+    "rank": 15
+  },
+  {
+    "participantId": "Er Nómina",
+    "displayName": "Er Nómina",
+    "groupPoints": 320,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 320,
+    "rank": 17
+  },
+  {
+    "participantId": "Menuda_Porra_la_de_AHR",
+    "displayName": "Menuda_Porra_la_de_AHR",
+    "groupPoints": 320,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 320,
+    "rank": 17
+  },
+  {
+    "participantId": "La mejor de electricidad",
+    "displayName": "La mejor de electricidad",
+    "groupPoints": 315,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 315,
+    "rank": 19
+  },
+  {
+    "participantId": "Amadeo Carboni",
+    "displayName": "Amadeo Carboni",
+    "groupPoints": 310,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 310,
+    "rank": 20
+  },
+  {
+    "participantId": "Francisco Carrasco",
+    "displayName": "Francisco Carrasco",
+    "groupPoints": 310,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 310,
+    "rank": 20
+  },
+  {
+    "participantId": "Chema3D",
+    "displayName": "Chema3D",
+    "groupPoints": 305,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 305,
+    "rank": 22
+  },
+  {
+    "participantId": "JOAQUIN",
+    "displayName": "JOAQUIN",
+    "groupPoints": 305,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 305,
+    "rank": 22
+  },
+  {
+    "participantId": "Los lunares",
+    "displayName": "Los lunares",
+    "groupPoints": 305,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 305,
+    "rank": 22
+  },
+  {
+    "participantId": "Pablo López Ríos",
+    "displayName": "Pablo López Ríos",
+    "groupPoints": 305,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 305,
+    "rank": 22
+  },
+  {
+    "participantId": "AMG",
+    "displayName": "AMG",
+    "groupPoints": 300,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 300,
+    "rank": 26
+  },
+  {
+    "participantId": "Brioso",
+    "displayName": "Brioso",
+    "groupPoints": 300,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 300,
+    "rank": 26
+  },
+  {
+    "participantId": "COPASO",
+    "displayName": "COPASO",
+    "groupPoints": 300,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 300,
+    "rank": 26
+  },
+  {
+    "participantId": "José Manuel Álvarez de la Fuent",
+    "displayName": "José Manuel Álvarez de la Fuent",
+    "groupPoints": 295,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 295,
+    "rank": 29
+  },
+  {
+    "participantId": "The Water MBA",
+    "displayName": "The Water MBA",
+    "groupPoints": 295,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 295,
+    "rank": 29
+  },
+  {
+    "participantId": "Javier Alcala",
+    "displayName": "Javier Alcala",
+    "groupPoints": 290,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 290,
+    "rank": 31
+  },
+  {
+    "participantId": "Pablo Molina Díaz",
+    "displayName": "Pablo Molina Díaz",
+    "groupPoints": 285,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 285,
+    "rank": 32
+  },
+  {
+    "participantId": "La Ceja de Carleto",
+    "displayName": "La Ceja de Carleto",
+    "groupPoints": 280,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 280,
+    "rank": 33
+  },
+  {
+    "participantId": "PAULA",
+    "displayName": "PAULA",
+    "groupPoints": 280,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 280,
+    "rank": 33
+  },
+  {
+    "participantId": "SISEPUEDE2",
+    "displayName": "SISEPUEDE2",
+    "groupPoints": 280,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 280,
+    "rank": 33
+  },
+  {
+    "participantId": "Blanca",
+    "displayName": "Blanca",
+    "groupPoints": 265,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 265,
+    "rank": 36
+  },
+  {
+    "participantId": "Luigi \"EL EXTERNO\"",
+    "displayName": "Luigi \"EL EXTERNO\"",
+    "groupPoints": 260,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 260,
+    "rank": 37
+  },
+  {
+    "participantId": "Omar",
+    "displayName": "Omar",
+    "groupPoints": 260,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 260,
+    "rank": 37
+  },
+  {
+    "participantId": "SPO",
+    "displayName": "SPO",
+    "groupPoints": 260,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 260,
+    "rank": 37
+  },
+  {
+    "participantId": "BMR",
+    "displayName": "BMR",
+    "groupPoints": 250,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 250,
+    "rank": 40
+  },
+  {
+    "participantId": "IreBetis",
+    "displayName": "IreBetis",
+    "groupPoints": 250,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 250,
+    "rank": 40
+  },
+  {
+    "participantId": "Ana",
+    "displayName": "Ana",
+    "groupPoints": 240,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 240,
+    "rank": 42
+  },
+  {
+    "participantId": "Fran Delineación",
+    "displayName": "Fran Delineación",
+    "groupPoints": 240,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 240,
+    "rank": 42
+  },
+  {
+    "participantId": "Jose Maria Diaz Antunez",
+    "displayName": "Jose Maria Diaz Antunez",
+    "groupPoints": 240,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 240,
+    "rank": 42
+  },
+  {
+    "participantId": "PP",
+    "displayName": "PP",
+    "groupPoints": 240,
+    "roundPoints": {
+      "R32": 0,
+      "R16": 0,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0
+    },
+    "knockoutPoints": 0,
+    "totalPoints": 240,
+    "rank": 42
+  }
+]

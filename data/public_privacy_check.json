@@ -1,0 +1,14 @@
+{
+  "criticalFindings": [
+    "[URL] in deployment_checklist.md",
+    "[URL] in frontend_contract.md",
+    "[URL] in frontend_contract.md",
+    "[URL] in github_pages_deployment.md",
+    "[URL] in github_pages_deployment.md",
+    "[URL] in local_testing.md",
+    "[URL] in update_results_workflow.md",
+    "[URL] in README.md"
+  ],
+  "reviewFindings": [],
+  "status": "BLOCKED"
+}

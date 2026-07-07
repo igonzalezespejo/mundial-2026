@@ -1,0 +1,17 @@
+{
+  "status": "OK_WITH_PENDING_RESULTS",
+  "usesRealKnockoutData": false,
+  "usesParticipantAsProxy": false,
+  "templateLoaded": true,
+  "thirdPlaceMatrixLoaded": true,
+  "groupStandingsComputed": true,
+  "slotsByRound": {
+    "R32": 16,
+    "R16": 8,
+    "QF": 4,
+    "SF": 2,
+    "THIRD_PLACE": 1,
+    "FINAL": 1
+  },
+  "discrepancies": []
+}
