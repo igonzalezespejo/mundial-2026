@@ -273,6 +273,14 @@ tr:hover {
 }
 
 /* Buttons and Tabs */
+.participant-nav-sticky {
+    position: sticky;
+    z-index: 900;
+    background-color: var(--bg-dark);
+    padding: 1.5rem 0 0 0;
+    margin-top: -1.5rem; /* Counteract container top padding so it reaches the header */
+}
+
 .btn-back {
     background: none;
     border: none;

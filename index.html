@@ -89,11 +89,13 @@
 
     <template id="participant-template">
         <div class="participant-view">
-            <button id="back-btn" class="btn-back">← Volver al Ranking</button>
+            <div class="participant-nav-sticky">
+                <button id="back-btn" class="btn-back">← Volver al Ranking</button>
 
-            <div class="tabs">
-                <button class="tab-btn active" data-target="group-stage">Fase de Grupos</button>
-                <button class="tab-btn" data-target="knockout-stage">Eliminatorias</button>
+                <div class="tabs">
+                    <button class="tab-btn active" data-target="group-stage">Fase de Grupos</button>
+                    <button class="tab-btn" data-target="knockout-stage">Eliminatorias</button>
+                </div>
             </div>
 
             <div id="group-stage" class="tab-content active">

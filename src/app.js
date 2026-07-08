@@ -44,6 +44,22 @@ export function showParticipantView(participantId) {
     initParticipantView(participantId);
     toggleHeaderView('participant');
     
+    // Ajustar el top del nav pegajoso según la altura del header
+    const appHeader = document.querySelector('.app-header');
+    const stickyNav = document.querySelector('.participant-nav-sticky');
+    if (appHeader && stickyNav) {
+        const updateStickyNav = () => {
+            if (document.body.contains(stickyNav)) {
+                stickyNav.style.top = `${appHeader.offsetHeight}px`;
+            } else {
+                window.removeEventListener('resize', updateStickyNav);
+            }
+        };
+        // Timeout para asegurar que el header ha recalculado su tamaño tras mostrar la info
+        setTimeout(updateStickyNav, 0);
+        window.addEventListener('resize', updateStickyNav);
+    }
+    
     const backBtn = document.getElementById('back-btn');
     if (backBtn) {
         backBtn.addEventListener('click', showRankingView);
