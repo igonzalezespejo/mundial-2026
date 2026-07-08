@@ -39,7 +39,8 @@ export function initProgressionView() {
                 id: m.matchId,
                 name: `M${m.matchNo} (${m.homeTeam} - ${m.awayTeam})`,
                 matchNo: m.matchNo,
-                type: 'GROUP'
+                type: 'GROUP',
+                round: 'GROUP'
             });
         });
     }
@@ -53,23 +54,42 @@ export function initProgressionView() {
                 id: m.slotId, // En el ranking, los puntos eliminatoria se guardan con slotId
                 name: `${m.round} (${hTeam} - ${aTeam})`,
                 matchNo: m.matchNo,
-                type: 'KNOCKOUT'
+                type: 'KNOCKOUT',
+                round: m.round
             });
         });
     }
 
-    // Ordenar cronológicamente por número de partido
+    // Dividir en 5 bloques para el eje X
+    const blockMatches = [[], [], [], [], []];
     playedMatches.sort((a, b) => a.matchNo - b.matchNo);
 
-    // 2. Preparar el Eje X (Nombres/IDs de partidos)
-    const xAxisData = ['Inicio', ...playedMatches.map(m => m.name)];
+    playedMatches.forEach(m => {
+        if (m.type === 'GROUP') blockMatches[0].push(m);
+        else if (m.round === 'R32') blockMatches[1].push(m);
+        else if (m.round === 'R16') blockMatches[2].push(m);
+        else if (m.round === 'QF') blockMatches[3].push(m);
+        else blockMatches[4].push(m);
+    });
+
+    // Calcular coordenada X (0 a 500, bloques de 100 de ancho)
+    blockMatches.forEach((block, bIndex) => {
+        const n = block.length;
+        if (n === 0) return;
+        block.forEach((m, i) => {
+            m.x = (bIndex * 100) + (100 * (i + 1) / n);
+        });
+    });
+
+    // Ordenar por x
+    playedMatches.sort((a, b) => a.x - b.x);
 
     // 3. Preparar las series para cada participante
     const series = [];
 
     participants.forEach((p, index) => {
         let currentPoints = 0;
-        const dataPoints = [0]; // Puntos al inicio
+        const dataPoints = [{ value: [0, 0], name: 'Inicio' }]; // Puntos al inicio
 
         // Calcular color del degradado: Paleta Turbo
         const maxIndex = Math.max(1, participants.length - 1);
@@ -102,7 +122,10 @@ export function initProgressionView() {
                 pts = (p.knockoutMatchPoints && p.knockoutMatchPoints[m.id]) || 0;
             }
             currentPoints += pts;
-            dataPoints.push(currentPoints);
+            dataPoints.push({
+                value: [m.x, currentPoints],
+                name: m.name
+            });
         });
 
         series.push({
@@ -155,8 +178,8 @@ export function initProgressionView() {
             trigger: 'item',
             formatter: function (params) {
                 return `<strong>${params.seriesName}</strong><br/>
-                        Partido: ${params.name}<br/>
-                        Puntos Acumulados: ${params.value}`;
+                        Partido: ${params.data.name}<br/>
+                        Puntos Acumulados: ${params.value[1]}`;
             }
         },
         grid: {
@@ -167,22 +190,38 @@ export function initProgressionView() {
             containLabel: true
         },
         xAxis: {
-            type: 'category',
-            data: xAxisData,
-            boundaryGap: false,
+            type: 'value',
+            min: 0,
+            max: 500,
+            interval: 100,
             axisLabel: {
-                show: false // Ocultar para no saturar, se ve en el hover
+                formatter: function (value) {
+                    if (value === 0) return 'Inicio';
+                    if (value === 100) return 'Grupos';
+                    if (value === 200) return '16avos';
+                    if (value === 300) return '8avos';
+                    if (value === 400) return '4tos';
+                    if (value === 500) return 'Finales';
+                    return '';
+                },
+                color: '#64748b',
+                fontFamily: 'Noto Sans'
             },
             axisLine: {
+                show: true,
                 lineStyle: {
-                    color: '#94a3b8'
+                    color: '#cbd5e1'
                 }
             },
             axisTick: {
-                show: false
+                show: true
             },
             splitLine: {
-                show: false
+                show: true,
+                lineStyle: {
+                    type: 'dashed',
+                    color: '#e2e8f0'
+                }
             }
         },
         yAxis: {
