@@ -25,6 +25,10 @@ Para validar la estructura matemática, asegurar la privacidad (ausencia de PII 
 npm run check:all
 ```
 
+## Actualización de Resultados Reales
+
+Para saber cómo actualizar los resultados reales del torneo y subirlos a la web pública, revisa el flujo documentado en [docs/update_results_workflow.md](docs/update_results_workflow.md).
+
 ## Pruebas en Servidor Local
 Para evitar restricciones CORS al visualizar la web con `fetch()` local, sirve el directorio ejecutando:
 ```bash

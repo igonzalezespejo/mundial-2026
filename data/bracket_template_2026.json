@@ -11,7 +11,7 @@
     "nextWinnerSlotId": "R16-01"
   },
   {
-    "slotId": "R32-02",
+    "slotId": "R32-03",
     "matchNo": 74,
     "round": "R32",
     "homeSource": "1E",
@@ -28,7 +28,7 @@
     "nextWinnerSlotId": "R16-01"
   },
   {
-    "slotId": "R32-03",
+    "slotId": "R32-04",
     "matchNo": 75,
     "round": "R32",
     "homeSource": "1F",
@@ -39,7 +39,7 @@
     "nextWinnerSlotId": "R16-02"
   },
   {
-    "slotId": "R32-04",
+    "slotId": "R32-02",
     "matchNo": 76,
     "round": "R32",
     "homeSource": "1C",
@@ -222,5 +222,99 @@
     "awaySourceType": "GROUP_POSITION",
     "thirdPlacePool": null,
     "nextWinnerSlotId": "R16-08"
+  },
+  {
+    "slotId": "R16-01",
+    "matchNo": 89,
+    "round": "R16",
+    "nextWinnerSlotId": "QF-01"
+  },
+  {
+    "slotId": "R16-02",
+    "matchNo": 90,
+    "round": "R16",
+    "nextWinnerSlotId": "QF-01"
+  },
+  {
+    "slotId": "R16-03",
+    "matchNo": 91,
+    "round": "R16",
+    "nextWinnerSlotId": "QF-02"
+  },
+  {
+    "slotId": "R16-04",
+    "matchNo": 92,
+    "round": "R16",
+    "nextWinnerSlotId": "QF-02"
+  },
+  {
+    "slotId": "R16-05",
+    "matchNo": 93,
+    "round": "R16",
+    "nextWinnerSlotId": "QF-03"
+  },
+  {
+    "slotId": "R16-06",
+    "matchNo": 94,
+    "round": "R16",
+    "nextWinnerSlotId": "QF-03"
+  },
+  {
+    "slotId": "R16-07",
+    "matchNo": 95,
+    "round": "R16",
+    "nextWinnerSlotId": "QF-04"
+  },
+  {
+    "slotId": "R16-08",
+    "matchNo": 96,
+    "round": "R16",
+    "nextWinnerSlotId": "QF-04"
+  },
+  {
+    "slotId": "QF-01",
+    "matchNo": 97,
+    "round": "QF",
+    "nextWinnerSlotId": "SF-01"
+  },
+  {
+    "slotId": "QF-02",
+    "matchNo": 98,
+    "round": "QF",
+    "nextWinnerSlotId": "SF-01"
+  },
+  {
+    "slotId": "QF-03",
+    "matchNo": 99,
+    "round": "QF",
+    "nextWinnerSlotId": "SF-02"
+  },
+  {
+    "slotId": "QF-04",
+    "matchNo": 100,
+    "round": "QF",
+    "nextWinnerSlotId": "SF-02"
+  },
+  {
+    "slotId": "SF-01",
+    "matchNo": 101,
+    "round": "SF",
+    "nextWinnerSlotId": "FINAL"
+  },
+  {
+    "slotId": "SF-02",
+    "matchNo": 102,
+    "round": "SF",
+    "nextWinnerSlotId": "FINAL"
+  },
+  {
+    "slotId": "THIRD_PLACE",
+    "matchNo": 103,
+    "round": "THIRD_PLACE"
+  },
+  {
+    "slotId": "FINAL",
+    "matchNo": 104,
+    "round": "FINAL"
   }
 ]

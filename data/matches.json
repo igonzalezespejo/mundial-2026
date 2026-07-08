@@ -1,8 +1,9 @@
 [
   {
-    "matchId": "GROUP-001",
+    "matchNo": 1,
+    "matchId": "MATCH-001",
     "round": "GROUP",
-    "group": null,
+    "group": "A",
     "date": "2026-06-11",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-11T21:00:00",
@@ -10,12 +11,14 @@
     "excelRawDate": 46184.875,
     "homeTeam": "México",
     "awayTeam": "Sudáfrica",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 5
   },
   {
-    "matchId": "GROUP-002",
+    "matchNo": 2,
+    "matchId": "MATCH-002",
     "round": "GROUP",
-    "group": null,
+    "group": "A",
     "date": "2026-06-12",
     "kickoffTime": "04:00",
     "kickoffDateTime": "2026-06-12T04:00:00",
@@ -23,12 +26,14 @@
     "excelRawDate": 46185.16666666666,
     "homeTeam": "Corea del Sur",
     "awayTeam": "Chequia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 6
   },
   {
-    "matchId": "GROUP-003",
+    "matchNo": 25,
+    "matchId": "MATCH-025",
     "round": "GROUP",
-    "group": null,
+    "group": "A",
     "date": "2026-06-18",
     "kickoffTime": "18:00",
     "kickoffDateTime": "2026-06-18T18:00:00",
@@ -36,12 +41,14 @@
     "excelRawDate": 46191.75,
     "homeTeam": "Chequia",
     "awayTeam": "Sudáfrica",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 7
   },
   {
-    "matchId": "GROUP-004",
+    "matchNo": 28,
+    "matchId": "MATCH-028",
     "round": "GROUP",
-    "group": null,
+    "group": "A",
     "date": "2026-06-19",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-19T03:00:00",
@@ -49,12 +56,14 @@
     "excelRawDate": 46192.125,
     "homeTeam": "México",
     "awayTeam": "Corea del Sur",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 8
   },
   {
-    "matchId": "GROUP-005",
+    "matchNo": 53,
+    "matchId": "MATCH-053",
     "round": "GROUP",
-    "group": null,
+    "group": "A",
     "date": "2026-06-25",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-25T03:00:00",
@@ -62,12 +71,14 @@
     "excelRawDate": 46198.125,
     "homeTeam": "Chequia",
     "awayTeam": "México",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 9
   },
   {
-    "matchId": "GROUP-006",
+    "matchNo": 54,
+    "matchId": "MATCH-054",
     "round": "GROUP",
-    "group": null,
+    "group": "A",
     "date": "2026-06-25",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-25T03:00:00",
@@ -75,12 +86,14 @@
     "excelRawDate": 46198.125,
     "homeTeam": "Sudáfrica",
     "awayTeam": "Corea del Sur",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 10
   },
   {
-    "matchId": "GROUP-007",
+    "matchNo": 3,
+    "matchId": "MATCH-003",
     "round": "GROUP",
-    "group": null,
+    "group": "B",
     "date": "2026-06-12",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-12T21:00:00",
@@ -88,12 +101,14 @@
     "excelRawDate": 46185.875,
     "homeTeam": "Canadá",
     "awayTeam": "Bosnia y Herz.",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 11
   },
   {
-    "matchId": "GROUP-008",
+    "matchNo": 8,
+    "matchId": "MATCH-008",
     "round": "GROUP",
-    "group": null,
+    "group": "B",
     "date": "2026-06-13",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-13T21:00:00",
@@ -101,12 +116,14 @@
     "excelRawDate": 46186.875,
     "homeTeam": "Catar",
     "awayTeam": "Suiza",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 12
   },
   {
-    "matchId": "GROUP-009",
+    "matchNo": 26,
+    "matchId": "MATCH-026",
     "round": "GROUP",
-    "group": null,
+    "group": "B",
     "date": "2026-06-18",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-18T21:00:00",
@@ -114,12 +131,14 @@
     "excelRawDate": 46191.875,
     "homeTeam": "Suiza",
     "awayTeam": "Bosnia y Herz.",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 13
   },
   {
-    "matchId": "GROUP-010",
+    "matchNo": 27,
+    "matchId": "MATCH-027",
     "round": "GROUP",
-    "group": null,
+    "group": "B",
     "date": "2026-06-19",
     "kickoffTime": null,
     "kickoffDateTime": null,
@@ -127,12 +146,14 @@
     "excelRawDate": 46192,
     "homeTeam": "Canadá",
     "awayTeam": "Catar",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 14
   },
   {
-    "matchId": "GROUP-011",
+    "matchNo": 51,
+    "matchId": "MATCH-051",
     "round": "GROUP",
-    "group": null,
+    "group": "B",
     "date": "2026-06-24",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-24T21:00:00",
@@ -140,12 +161,14 @@
     "excelRawDate": 46197.875,
     "homeTeam": "Suiza",
     "awayTeam": "Canadá",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 15
   },
   {
-    "matchId": "GROUP-012",
+    "matchNo": 52,
+    "matchId": "MATCH-052",
     "round": "GROUP",
-    "group": null,
+    "group": "B",
     "date": "2026-06-24",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-24T21:00:00",
@@ -153,12 +176,14 @@
     "excelRawDate": 46197.875,
     "homeTeam": "Bosnia y Herz.",
     "awayTeam": "Catar",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 16
   },
   {
-    "matchId": "GROUP-013",
+    "matchNo": 7,
+    "matchId": "MATCH-007",
     "round": "GROUP",
-    "group": null,
+    "group": "C",
     "date": "2026-06-14",
     "kickoffTime": null,
     "kickoffDateTime": null,
@@ -166,12 +191,14 @@
     "excelRawDate": 46187,
     "homeTeam": "Brasil",
     "awayTeam": "Marruecos",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 17
   },
   {
-    "matchId": "GROUP-014",
+    "matchNo": 5,
+    "matchId": "MATCH-005",
     "round": "GROUP",
-    "group": null,
+    "group": "C",
     "date": "2026-06-14",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-14T03:00:00",
@@ -179,12 +206,14 @@
     "excelRawDate": 46187.125,
     "homeTeam": "Haití",
     "awayTeam": "Escocia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 18
   },
   {
-    "matchId": "GROUP-015",
+    "matchNo": 30,
+    "matchId": "MATCH-030",
     "round": "GROUP",
-    "group": null,
+    "group": "C",
     "date": "2026-06-20",
     "kickoffTime": null,
     "kickoffDateTime": null,
@@ -192,12 +221,14 @@
     "excelRawDate": 46193,
     "homeTeam": "Escocia",
     "awayTeam": "Marruecos",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 19
   },
   {
-    "matchId": "GROUP-016",
+    "matchNo": 29,
+    "matchId": "MATCH-029",
     "round": "GROUP",
-    "group": null,
+    "group": "C",
     "date": "2026-06-20",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-20T03:00:00",
@@ -205,12 +236,14 @@
     "excelRawDate": 46193.125,
     "homeTeam": "Brasil",
     "awayTeam": "Haití",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 20
   },
   {
-    "matchId": "GROUP-017",
+    "matchNo": 49,
+    "matchId": "MATCH-049",
     "round": "GROUP",
-    "group": null,
+    "group": "C",
     "date": "2026-06-25",
     "kickoffTime": null,
     "kickoffDateTime": null,
@@ -218,12 +251,14 @@
     "excelRawDate": 46198,
     "homeTeam": "Escocia",
     "awayTeam": "Brasil",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 21
   },
   {
-    "matchId": "GROUP-018",
+    "matchNo": 50,
+    "matchId": "MATCH-050",
     "round": "GROUP",
-    "group": null,
+    "group": "C",
     "date": "2026-06-25",
     "kickoffTime": null,
     "kickoffDateTime": null,
@@ -231,12 +266,14 @@
     "excelRawDate": 46198,
     "homeTeam": "Marruecos",
     "awayTeam": "Haití",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 22
   },
   {
-    "matchId": "GROUP-019",
+    "matchNo": 4,
+    "matchId": "MATCH-004",
     "round": "GROUP",
-    "group": null,
+    "group": "D",
     "date": "2026-06-13",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-13T03:00:00",
@@ -244,12 +281,14 @@
     "excelRawDate": 46186.125,
     "homeTeam": "Estados Unidos",
     "awayTeam": "Paraguay",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 23
   },
   {
-    "matchId": "GROUP-020",
+    "matchNo": 6,
+    "matchId": "MATCH-006",
     "round": "GROUP",
-    "group": null,
+    "group": "D",
     "date": "2026-06-14",
     "kickoffTime": "06:00",
     "kickoffDateTime": "2026-06-14T06:00:00",
@@ -257,12 +296,14 @@
     "excelRawDate": 46187.25,
     "homeTeam": "Australia",
     "awayTeam": "Turquía",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 24
   },
   {
-    "matchId": "GROUP-021",
+    "matchNo": 32,
+    "matchId": "MATCH-032",
     "round": "GROUP",
-    "group": null,
+    "group": "D",
     "date": "2026-06-19",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-19T21:00:00",
@@ -270,12 +311,14 @@
     "excelRawDate": 46192.875,
     "homeTeam": "Estados Unidos",
     "awayTeam": "Australia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 25
   },
   {
-    "matchId": "GROUP-022",
+    "matchNo": 31,
+    "matchId": "MATCH-031",
     "round": "GROUP",
-    "group": null,
+    "group": "D",
     "date": "2026-06-20",
     "kickoffTime": "06:00",
     "kickoffDateTime": "2026-06-20T06:00:00",
@@ -283,12 +326,14 @@
     "excelRawDate": 46193.25,
     "homeTeam": "Turquía",
     "awayTeam": "Paraguay",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 26
   },
   {
-    "matchId": "GROUP-023",
+    "matchNo": 59,
+    "matchId": "MATCH-059",
     "round": "GROUP",
-    "group": null,
+    "group": "D",
     "date": "2026-06-26",
     "kickoffTime": "04:00",
     "kickoffDateTime": "2026-06-26T04:00:00",
@@ -296,12 +341,14 @@
     "excelRawDate": 46199.16666666666,
     "homeTeam": "Turquía",
     "awayTeam": "Estados Unidos",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 27
   },
   {
-    "matchId": "GROUP-024",
+    "matchNo": 60,
+    "matchId": "MATCH-060",
     "round": "GROUP",
-    "group": null,
+    "group": "D",
     "date": "2026-06-26",
     "kickoffTime": "04:00",
     "kickoffDateTime": "2026-06-26T04:00:00",
@@ -309,12 +356,14 @@
     "excelRawDate": 46199.16666666666,
     "homeTeam": "Paraguay",
     "awayTeam": "Australia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 28
   },
   {
-    "matchId": "GROUP-025",
+    "matchNo": 10,
+    "matchId": "MATCH-010",
     "round": "GROUP",
-    "group": null,
+    "group": "E",
     "date": "2026-06-14",
     "kickoffTime": "19:00",
     "kickoffDateTime": "2026-06-14T19:00:00",
@@ -322,12 +371,14 @@
     "excelRawDate": 46187.79166666666,
     "homeTeam": "Alemania",
     "awayTeam": "Curazao",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 29
   },
   {
-    "matchId": "GROUP-026",
+    "matchNo": 9,
+    "matchId": "MATCH-009",
     "round": "GROUP",
-    "group": null,
+    "group": "E",
     "date": "2026-06-15",
     "kickoffTime": "01:00",
     "kickoffDateTime": "2026-06-15T01:00:00",
@@ -335,12 +386,14 @@
     "excelRawDate": 46188.04166666666,
     "homeTeam": "Costa de Marfil",
     "awayTeam": "Ecuador",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 30
   },
   {
-    "matchId": "GROUP-027",
+    "matchNo": 33,
+    "matchId": "MATCH-033",
     "round": "GROUP",
-    "group": null,
+    "group": "E",
     "date": "2026-06-20",
     "kickoffTime": "22:00",
     "kickoffDateTime": "2026-06-20T22:00:00",
@@ -348,12 +401,14 @@
     "excelRawDate": 46193.91666666666,
     "homeTeam": "Alemania",
     "awayTeam": "Costa de Marfil",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 31
   },
   {
-    "matchId": "GROUP-028",
+    "matchNo": 34,
+    "matchId": "MATCH-034",
     "round": "GROUP",
-    "group": null,
+    "group": "E",
     "date": "2026-06-21",
     "kickoffTime": "02:00",
     "kickoffDateTime": "2026-06-21T02:00:00",
@@ -361,12 +416,14 @@
     "excelRawDate": 46194.08333333334,
     "homeTeam": "Ecuador",
     "awayTeam": "Curazao",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 32
   },
   {
-    "matchId": "GROUP-029",
+    "matchNo": 55,
+    "matchId": "MATCH-055",
     "round": "GROUP",
-    "group": null,
+    "group": "E",
     "date": "2026-06-25",
     "kickoffTime": "22:00",
     "kickoffDateTime": "2026-06-25T22:00:00",
@@ -374,12 +431,14 @@
     "excelRawDate": 46198.91666666666,
     "homeTeam": "Curazao",
     "awayTeam": "Costa de Marfil",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 33
   },
   {
-    "matchId": "GROUP-030",
+    "matchNo": 56,
+    "matchId": "MATCH-056",
     "round": "GROUP",
-    "group": null,
+    "group": "E",
     "date": "2026-06-25",
     "kickoffTime": "22:00",
     "kickoffDateTime": "2026-06-25T22:00:00",
@@ -387,12 +446,14 @@
     "excelRawDate": 46198.91666666666,
     "homeTeam": "Ecuador",
     "awayTeam": "Alemania",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 34
   },
   {
-    "matchId": "GROUP-031",
+    "matchNo": 11,
+    "matchId": "MATCH-011",
     "round": "GROUP",
-    "group": null,
+    "group": "F",
     "date": "2026-06-14",
     "kickoffTime": "22:00",
     "kickoffDateTime": "2026-06-14T22:00:00",
@@ -400,12 +461,14 @@
     "excelRawDate": 46187.91666666666,
     "homeTeam": "Países Bajos",
     "awayTeam": "Japón",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 35
   },
   {
-    "matchId": "GROUP-032",
+    "matchNo": 12,
+    "matchId": "MATCH-012",
     "round": "GROUP",
-    "group": null,
+    "group": "F",
     "date": "2026-06-15",
     "kickoffTime": "04:00",
     "kickoffDateTime": "2026-06-15T04:00:00",
@@ -413,12 +476,14 @@
     "excelRawDate": 46188.16666666666,
     "homeTeam": "Suecia",
     "awayTeam": "Túnez",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 36
   },
   {
-    "matchId": "GROUP-033",
+    "matchNo": 35,
+    "matchId": "MATCH-035",
     "round": "GROUP",
-    "group": null,
+    "group": "F",
     "date": "2026-06-20",
     "kickoffTime": "19:00",
     "kickoffDateTime": "2026-06-20T19:00:00",
@@ -426,12 +491,14 @@
     "excelRawDate": 46193.79166666666,
     "homeTeam": "Países Bajos",
     "awayTeam": "Suecia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 37
   },
   {
-    "matchId": "GROUP-034",
+    "matchNo": 36,
+    "matchId": "MATCH-036",
     "round": "GROUP",
-    "group": null,
+    "group": "F",
     "date": "2026-06-21",
     "kickoffTime": "06:00",
     "kickoffDateTime": "2026-06-21T06:00:00",
@@ -439,12 +506,14 @@
     "excelRawDate": 46194.25,
     "homeTeam": "Túnez",
     "awayTeam": "Japón",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 38
   },
   {
-    "matchId": "GROUP-035",
+    "matchNo": 57,
+    "matchId": "MATCH-057",
     "round": "GROUP",
-    "group": null,
+    "group": "F",
     "date": "2026-06-26",
     "kickoffTime": "01:00",
     "kickoffDateTime": "2026-06-26T01:00:00",
@@ -452,12 +521,14 @@
     "excelRawDate": 46199.04166666666,
     "homeTeam": "Japón",
     "awayTeam": "Suecia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 39
   },
   {
-    "matchId": "GROUP-036",
+    "matchNo": 58,
+    "matchId": "MATCH-058",
     "round": "GROUP",
-    "group": null,
+    "group": "F",
     "date": "2026-06-26",
     "kickoffTime": "01:00",
     "kickoffDateTime": "2026-06-26T01:00:00",
@@ -465,12 +536,14 @@
     "excelRawDate": 46199.04166666666,
     "homeTeam": "Túnez",
     "awayTeam": "Países Bajos",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 40
   },
   {
-    "matchId": "GROUP-037",
+    "matchNo": 16,
+    "matchId": "MATCH-016",
     "round": "GROUP",
-    "group": null,
+    "group": "G",
     "date": "2026-06-15",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-15T21:00:00",
@@ -478,12 +551,14 @@
     "excelRawDate": 46188.875,
     "homeTeam": "Bélgica",
     "awayTeam": "Egipto",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 41
   },
   {
-    "matchId": "GROUP-038",
+    "matchNo": 15,
+    "matchId": "MATCH-015",
     "round": "GROUP",
-    "group": null,
+    "group": "G",
     "date": "2026-06-16",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-16T03:00:00",
@@ -491,12 +566,14 @@
     "excelRawDate": 46189.125,
     "homeTeam": "Irán",
     "awayTeam": "Nueva Zelanda",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 42
   },
   {
-    "matchId": "GROUP-039",
+    "matchNo": 39,
+    "matchId": "MATCH-039",
     "round": "GROUP",
-    "group": null,
+    "group": "G",
     "date": "2026-06-21",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-21T21:00:00",
@@ -504,12 +581,14 @@
     "excelRawDate": 46194.875,
     "homeTeam": "Bélgica",
     "awayTeam": "Irán",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 43
   },
   {
-    "matchId": "GROUP-040",
+    "matchNo": 40,
+    "matchId": "MATCH-040",
     "round": "GROUP",
-    "group": null,
+    "group": "G",
     "date": "2026-06-22",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-22T03:00:00",
@@ -517,12 +596,14 @@
     "excelRawDate": 46195.125,
     "homeTeam": "Nueva Zelanda",
     "awayTeam": "Egipto",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 44
   },
   {
-    "matchId": "GROUP-041",
+    "matchNo": 63,
+    "matchId": "MATCH-063",
     "round": "GROUP",
-    "group": null,
+    "group": "G",
     "date": "2026-06-27",
     "kickoffTime": "05:00",
     "kickoffDateTime": "2026-06-27T05:00:00",
@@ -530,12 +611,14 @@
     "excelRawDate": 46200.20833333334,
     "homeTeam": "Egipto",
     "awayTeam": "Irán",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 45
   },
   {
-    "matchId": "GROUP-042",
+    "matchNo": 64,
+    "matchId": "MATCH-064",
     "round": "GROUP",
-    "group": null,
+    "group": "G",
     "date": "2026-06-27",
     "kickoffTime": "05:00",
     "kickoffDateTime": "2026-06-27T05:00:00",
@@ -543,12 +626,14 @@
     "excelRawDate": 46200.20833333334,
     "homeTeam": "Nueva Zelanda",
     "awayTeam": "Bélgica",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 46
   },
   {
-    "matchId": "GROUP-043",
+    "matchNo": 14,
+    "matchId": "MATCH-014",
     "round": "GROUP",
-    "group": null,
+    "group": "H",
     "date": "2026-06-15",
     "kickoffTime": "18:00",
     "kickoffDateTime": "2026-06-15T18:00:00",
@@ -556,12 +641,14 @@
     "excelRawDate": 46188.75,
     "homeTeam": "España",
     "awayTeam": "Cabo Verde",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 47
   },
   {
-    "matchId": "GROUP-044",
+    "matchNo": 13,
+    "matchId": "MATCH-013",
     "round": "GROUP",
-    "group": null,
+    "group": "H",
     "date": "2026-06-16",
     "kickoffTime": null,
     "kickoffDateTime": null,
@@ -569,12 +656,14 @@
     "excelRawDate": 46189,
     "homeTeam": "Arabia Saudí",
     "awayTeam": "Uruguay",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 48
   },
   {
-    "matchId": "GROUP-045",
+    "matchNo": 38,
+    "matchId": "MATCH-038",
     "round": "GROUP",
-    "group": null,
+    "group": "H",
     "date": "2026-06-21",
     "kickoffTime": "18:00",
     "kickoffDateTime": "2026-06-21T18:00:00",
@@ -582,12 +671,14 @@
     "excelRawDate": 46194.75,
     "homeTeam": "España",
     "awayTeam": "Arabia Saudí",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 49
   },
   {
-    "matchId": "GROUP-046",
+    "matchNo": 37,
+    "matchId": "MATCH-037",
     "round": "GROUP",
-    "group": null,
+    "group": "H",
     "date": "2026-06-22",
     "kickoffTime": null,
     "kickoffDateTime": null,
@@ -595,12 +686,14 @@
     "excelRawDate": 46195,
     "homeTeam": "Uruguay",
     "awayTeam": "Cabo Verde",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 50
   },
   {
-    "matchId": "GROUP-047",
+    "matchNo": 65,
+    "matchId": "MATCH-065",
     "round": "GROUP",
-    "group": null,
+    "group": "H",
     "date": "2026-06-27",
     "kickoffTime": "02:00",
     "kickoffDateTime": "2026-06-27T02:00:00",
@@ -608,12 +701,14 @@
     "excelRawDate": 46200.08333333334,
     "homeTeam": "Cabo Verde",
     "awayTeam": "Arabia Saudí",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 51
   },
   {
-    "matchId": "GROUP-048",
+    "matchNo": 66,
+    "matchId": "MATCH-066",
     "round": "GROUP",
-    "group": null,
+    "group": "H",
     "date": "2026-06-27",
     "kickoffTime": "02:00",
     "kickoffDateTime": "2026-06-27T02:00:00",
@@ -621,12 +716,14 @@
     "excelRawDate": 46200.08333333334,
     "homeTeam": "Uruguay",
     "awayTeam": "España",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 52
   },
   {
-    "matchId": "GROUP-049",
+    "matchNo": 17,
+    "matchId": "MATCH-017",
     "round": "GROUP",
-    "group": null,
+    "group": "I",
     "date": "2026-06-16",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-16T21:00:00",
@@ -634,12 +731,14 @@
     "excelRawDate": 46189.875,
     "homeTeam": "Francia",
     "awayTeam": "Senegal",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 53
   },
   {
-    "matchId": "GROUP-050",
+    "matchNo": 18,
+    "matchId": "MATCH-018",
     "round": "GROUP",
-    "group": null,
+    "group": "I",
     "date": "2026-06-17",
     "kickoffTime": null,
     "kickoffDateTime": null,
@@ -647,12 +746,14 @@
     "excelRawDate": 46190,
     "homeTeam": "Irak",
     "awayTeam": "Noruega",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 54
   },
   {
-    "matchId": "GROUP-051",
+    "matchNo": 42,
+    "matchId": "MATCH-042",
     "round": "GROUP",
-    "group": null,
+    "group": "I",
     "date": "2026-06-22",
     "kickoffTime": "23:00",
     "kickoffDateTime": "2026-06-22T23:00:00",
@@ -660,12 +761,14 @@
     "excelRawDate": 46195.95833333334,
     "homeTeam": "Francia",
     "awayTeam": "Irak",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 55
   },
   {
-    "matchId": "GROUP-052",
+    "matchNo": 41,
+    "matchId": "MATCH-041",
     "round": "GROUP",
-    "group": null,
+    "group": "I",
     "date": "2026-06-23",
     "kickoffTime": "02:00",
     "kickoffDateTime": "2026-06-23T02:00:00",
@@ -673,12 +776,14 @@
     "excelRawDate": 46196.08333333334,
     "homeTeam": "Noruega",
     "awayTeam": "Senegal",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 56
   },
   {
-    "matchId": "GROUP-053",
+    "matchNo": 61,
+    "matchId": "MATCH-061",
     "round": "GROUP",
-    "group": null,
+    "group": "I",
     "date": "2026-06-26",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-26T21:00:00",
@@ -686,12 +791,14 @@
     "excelRawDate": 46199.875,
     "homeTeam": "Noruega",
     "awayTeam": "Francia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 57
   },
   {
-    "matchId": "GROUP-054",
+    "matchNo": 62,
+    "matchId": "MATCH-062",
     "round": "GROUP",
-    "group": null,
+    "group": "I",
     "date": "2026-06-26",
     "kickoffTime": "21:00",
     "kickoffDateTime": "2026-06-26T21:00:00",
@@ -699,12 +806,14 @@
     "excelRawDate": 46199.875,
     "homeTeam": "Senegal",
     "awayTeam": "Irak",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 58
   },
   {
-    "matchId": "GROUP-055",
+    "matchNo": 19,
+    "matchId": "MATCH-019",
     "round": "GROUP",
-    "group": null,
+    "group": "J",
     "date": "2026-06-17",
     "kickoffTime": "03:00",
     "kickoffDateTime": "2026-06-17T03:00:00",
@@ -712,12 +821,14 @@
     "excelRawDate": 46190.125,
     "homeTeam": "Argentina",
     "awayTeam": "Argelia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 59
   },
   {
-    "matchId": "GROUP-056",
+    "matchNo": 20,
+    "matchId": "MATCH-020",
     "round": "GROUP",
-    "group": null,
+    "group": "J",
     "date": "2026-06-17",
     "kickoffTime": "06:00",
     "kickoffDateTime": "2026-06-17T06:00:00",
@@ -725,12 +836,14 @@
     "excelRawDate": 46190.25,
     "homeTeam": "Austria",
     "awayTeam": "Jordania",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 60
   },
   {
-    "matchId": "GROUP-057",
+    "matchNo": 43,
+    "matchId": "MATCH-043",
     "round": "GROUP",
-    "group": null,
+    "group": "J",
     "date": "2026-06-22",
     "kickoffTime": "19:00",
     "kickoffDateTime": "2026-06-22T19:00:00",
@@ -738,12 +851,14 @@
     "excelRawDate": 46195.79166666666,
     "homeTeam": "Argentina",
     "awayTeam": "Austria",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 61
   },
   {
-    "matchId": "GROUP-058",
+    "matchNo": 44,
+    "matchId": "MATCH-044",
     "round": "GROUP",
-    "group": null,
+    "group": "J",
     "date": "2026-06-23",
     "kickoffTime": "05:00",
     "kickoffDateTime": "2026-06-23T05:00:00",
@@ -751,12 +866,14 @@
     "excelRawDate": 46196.20833333334,
     "homeTeam": "Jordania",
     "awayTeam": "Argelia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 62
   },
   {
-    "matchId": "GROUP-059",
+    "matchNo": 69,
+    "matchId": "MATCH-069",
     "round": "GROUP",
-    "group": null,
+    "group": "J",
     "date": "2026-06-28",
     "kickoffTime": "04:00",
     "kickoffDateTime": "2026-06-28T04:00:00",
@@ -764,12 +881,14 @@
     "excelRawDate": 46201.16666666666,
     "homeTeam": "Argelia",
     "awayTeam": "Austria",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 63
   },
   {
-    "matchId": "GROUP-060",
+    "matchNo": 70,
+    "matchId": "MATCH-070",
     "round": "GROUP",
-    "group": null,
+    "group": "J",
     "date": "2026-06-28",
     "kickoffTime": "04:00",
     "kickoffDateTime": "2026-06-28T04:00:00",
@@ -777,12 +896,14 @@
     "excelRawDate": 46201.16666666666,
     "homeTeam": "Jordania",
     "awayTeam": "Argentina",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 64
   },
   {
-    "matchId": "GROUP-061",
+    "matchNo": 23,
+    "matchId": "MATCH-023",
     "round": "GROUP",
-    "group": null,
+    "group": "K",
     "date": "2026-06-17",
     "kickoffTime": "19:00",
     "kickoffDateTime": "2026-06-17T19:00:00",
@@ -790,12 +911,14 @@
     "excelRawDate": 46190.79166666666,
     "homeTeam": "Portugal",
     "awayTeam": "R.D. Congo",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 65
   },
   {
-    "matchId": "GROUP-062",
+    "matchNo": 24,
+    "matchId": "MATCH-024",
     "round": "GROUP",
-    "group": null,
+    "group": "K",
     "date": "2026-06-18",
     "kickoffTime": "04:00",
     "kickoffDateTime": "2026-06-18T04:00:00",
@@ -803,12 +926,14 @@
     "excelRawDate": 46191.16666666666,
     "homeTeam": "Uzbekistán",
     "awayTeam": "Colombia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 66
   },
   {
-    "matchId": "GROUP-063",
+    "matchNo": 47,
+    "matchId": "MATCH-047",
     "round": "GROUP",
-    "group": null,
+    "group": "K",
     "date": "2026-06-23",
     "kickoffTime": "19:00",
     "kickoffDateTime": "2026-06-23T19:00:00",
@@ -816,12 +941,14 @@
     "excelRawDate": 46196.79166666666,
     "homeTeam": "Portugal",
     "awayTeam": "Uzbekistán",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 67
   },
   {
-    "matchId": "GROUP-064",
+    "matchNo": 48,
+    "matchId": "MATCH-048",
     "round": "GROUP",
-    "group": null,
+    "group": "K",
     "date": "2026-06-24",
     "kickoffTime": "04:00",
     "kickoffDateTime": "2026-06-24T04:00:00",
@@ -829,12 +956,14 @@
     "excelRawDate": 46197.16666666666,
     "homeTeam": "Colombia",
     "awayTeam": "R.D. Congo",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 68
   },
   {
-    "matchId": "GROUP-065",
+    "matchNo": 71,
+    "matchId": "MATCH-071",
     "round": "GROUP",
-    "group": null,
+    "group": "K",
     "date": "2026-06-28",
     "kickoffTime": "01:30",
     "kickoffDateTime": "2026-06-28T01:30:00",
@@ -842,12 +971,14 @@
     "excelRawDate": 46201.0625,
     "homeTeam": "Colombia",
     "awayTeam": "Portugal",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 69
   },
   {
-    "matchId": "GROUP-066",
+    "matchNo": 72,
+    "matchId": "MATCH-072",
     "round": "GROUP",
-    "group": null,
+    "group": "K",
     "date": "2026-06-28",
     "kickoffTime": "01:30",
     "kickoffDateTime": "2026-06-28T01:30:00",
@@ -855,12 +986,14 @@
     "excelRawDate": 46201.0625,
     "homeTeam": "R.D. Congo",
     "awayTeam": "Uzbekistán",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 70
   },
   {
-    "matchId": "GROUP-067",
+    "matchNo": 22,
+    "matchId": "MATCH-022",
     "round": "GROUP",
-    "group": null,
+    "group": "L",
     "date": "2026-06-17",
     "kickoffTime": "22:00",
     "kickoffDateTime": "2026-06-17T22:00:00",
@@ -868,12 +1001,14 @@
     "excelRawDate": 46190.91666666666,
     "homeTeam": "Inglaterra",
     "awayTeam": "Croacia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 71
   },
   {
-    "matchId": "GROUP-068",
+    "matchNo": 21,
+    "matchId": "MATCH-021",
     "round": "GROUP",
-    "group": null,
+    "group": "L",
     "date": "2026-06-18",
     "kickoffTime": "01:00",
     "kickoffDateTime": "2026-06-18T01:00:00",
@@ -881,12 +1016,14 @@
     "excelRawDate": 46191.04166666666,
     "homeTeam": "Ghana",
     "awayTeam": "Panamá",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 72
   },
   {
-    "matchId": "GROUP-069",
+    "matchNo": 45,
+    "matchId": "MATCH-045",
     "round": "GROUP",
-    "group": null,
+    "group": "L",
     "date": "2026-06-23",
     "kickoffTime": "22:00",
     "kickoffDateTime": "2026-06-23T22:00:00",
@@ -894,12 +1031,14 @@
     "excelRawDate": 46196.91666666666,
     "homeTeam": "Inglaterra",
     "awayTeam": "Ghana",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 73
   },
   {
-    "matchId": "GROUP-070",
+    "matchNo": 46,
+    "matchId": "MATCH-046",
     "round": "GROUP",
-    "group": null,
+    "group": "L",
     "date": "2026-06-24",
     "kickoffTime": "01:00",
     "kickoffDateTime": "2026-06-24T01:00:00",
@@ -907,12 +1046,14 @@
     "excelRawDate": 46197.04166666666,
     "homeTeam": "Panamá",
     "awayTeam": "Croacia",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 74
   },
   {
-    "matchId": "GROUP-071",
+    "matchNo": 67,
+    "matchId": "MATCH-067",
     "round": "GROUP",
-    "group": null,
+    "group": "L",
     "date": "2026-06-27",
     "kickoffTime": "23:00",
     "kickoffDateTime": "2026-06-27T23:00:00",
@@ -920,12 +1061,14 @@
     "excelRawDate": 46200.95833333334,
     "homeTeam": "Panamá",
     "awayTeam": "Inglaterra",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 75
   },
   {
-    "matchId": "GROUP-072",
+    "matchNo": 68,
+    "matchId": "MATCH-068",
     "round": "GROUP",
-    "group": null,
+    "group": "L",
     "date": "2026-06-27",
     "kickoffTime": "23:00",
     "kickoffDateTime": "2026-06-27T23:00:00",
@@ -933,6 +1076,7 @@
     "excelRawDate": 46200.95833333334,
     "homeTeam": "Croacia",
     "awayTeam": "Ghana",
-    "status": "FINISHED"
+    "status": "FINISHED",
+    "sourceRow": 76
   }
 ]

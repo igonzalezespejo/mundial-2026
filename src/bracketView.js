@@ -11,9 +11,11 @@ export function renderBracketStage(participantId) {
         return;
     }
 
+    const rankingEntry = appData.ranking.find(r => r.participantId === participantId);
+    const knockoutMatchPoints = rankingEntry ? rankingEntry.knockoutMatchPoints : {};
+
     const roundsOrder = ['R32', 'R16', 'QF', 'SF', 'THIRD_PLACE', 'FINAL', 'CHAMPION'];
     
-    // Agrupar predicciones por ronda
     const grouped = {};
     roundsOrder.forEach(r => grouped[r] = []);
     
@@ -30,44 +32,93 @@ export function renderBracketStage(participantId) {
         const roundDiv = document.createElement('div');
         roundDiv.className = 'card';
         
-        let html = `<h3 style="margin-bottom: 1rem; color: var(--accent);">${round}</h3>`;
+        let title = round;
+        if (round === 'R32') title = '16avos / R32';
+        else if (round === 'R16') title = '8os / R16';
+        else if (round === 'QF') title = '4os / QF';
+        else if (round === 'SF') title = 'Semis / SF';
+        else if (round === 'THIRD_PLACE') title = '3er / THIRD_PLACE';
+        else if (round === 'FINAL') title = 'Final / FINAL';
+        else if (round === 'CHAMPION') title = 'Campeón / CHAMPION';
+
+        let html = `<h3 style="margin-bottom: 1rem; color: var(--accent);">${title}</h3>`;
         
         if (round === 'CHAMPION') {
             const champTeam = roundPreds[0].team;
-            if (champTeam && champTeam.trim() !== '') {
-                html += `<p style="font-size: 1.2rem;"><strong>Campeón Apostado:</strong> ${escapeHTML(champTeam)}</p>`;
-            } else {
-                html += `<p style="font-size: 1.2rem;" class="status-warning"><strong>Campeón Apostado:</strong> No detectado</p>`;
-            }
-        } else {
-            html += `<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem;">`;
+            const pts = knockoutMatchPoints['CHAMPION'] !== undefined ? knockoutMatchPoints['CHAMPION'] : '-';
+            const actualChamp = appData.actual_knockout_bracket.champion || 'Pendiente';
             
-            // Sort by slotId
+            html += `<div class="table-container">
+                        <table class="matches-table">
+                            <thead>
+                                <tr>
+                                    <th>PARTIDO</th>
+                                    <th>APUESTA</th>
+                                    <th>RESULTADO REAL</th>
+                                    <th>PUNTOS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Campeón Mundial 2026</td>
+                                    <td>${escapeHTML(champTeam || 'No detectado')}</td>
+                                    <td>${escapeHTML(actualChamp)}</td>
+                                    <td>${pts}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                     </div>`;
+        } else {
+            html += `<div class="table-container">
+                        <table class="matches-table">
+                            <thead>
+                                <tr>
+                                    <th>PARTIDO</th>
+                                    <th>APUESTA</th>
+                                    <th>RESULTADO REAL</th>
+                                    <th>PUNTOS</th>
+                                </tr>
+                            </thead>
+                            <tbody>`;
+            
             roundPreds.sort((a,b) => (a.slotId || '').localeCompare(b.slotId || ''));
 
             roundPreds.forEach(p => {
                 const templateSlot = appData.bracket_template_2026.find(s => s.slotId === p.slotId) || {};
                 const actualSlot = appData.actual_knockout_bracket.matches.find(m => m.slotId === p.slotId) || {};
                 
-                let sourceInfo = templateSlot.homeSource ? `${templateSlot.homeSource} vs ${templateSlot.awaySource}` : '';
                 let matchNo = templateSlot.matchNo ? `M${templateSlot.matchNo}` : '';
                 
-                let hTeam = escapeHTML(p.predictedHomeTeam || 'N/A');
-                let aTeam = escapeHTML(p.predictedAwayTeam || 'N/A');
-                let score = p.predictedHomeGoals !== null ? `${p.predictedHomeGoals} - ${p.predictedAwayGoals}` : 'Pasa: ' + (p.predictedWinner || '?');
+                let partidoText = matchNo ? `${matchNo} · ${p.slotId}` : p.slotId;
 
-                html += `<div class="bracket-slot">
-                            <div class="bracket-slot-header">
-                                ${matchNo} · ${p.slotId} ${sourceInfo ? ' · ' + sourceInfo : ''}
-                            </div>
-                            <div class="bracket-slot-teams">
-                                <span>${hTeam}</span>
-                                <span>${score}</span>
-                                <span>${aTeam}</span>
-                            </div>
-                         </div>`;
+                let apuHome = escapeHTML(p.predictedHomeTeam || '?');
+                let apuAway = escapeHTML(p.predictedAwayTeam || '?');
+                let apuesta = `${apuHome} ${p.predictedHomeGoals !== null ? p.predictedHomeGoals : '?'} - ${p.predictedAwayGoals !== null ? p.predictedAwayGoals : '?'} ${apuAway}`;
+                
+                if (p.predictedHomeGoals !== null && p.predictedHomeGoals === p.predictedAwayGoals && p.predictedWinner) {
+                    apuesta += ` · pasa ${escapeHTML(p.predictedWinner)}`;
+                }
+
+                let resultadoReal = 'Pendiente';
+                if (actualSlot && actualSlot.status === 'FINISHED') {
+                    let actHome = escapeHTML(actualSlot.homeTeam || '?');
+                    let actAway = escapeHTML(actualSlot.awayTeam || '?');
+                    resultadoReal = `${actHome} ${actualSlot.homeGoals} - ${actualSlot.awayGoals} ${actAway}`;
+                    if (actualSlot.decidedByPenalties && actualSlot.winner) {
+                        resultadoReal += ` · pasa ${escapeHTML(actualSlot.winner)} pen.`;
+                    }
+                }
+
+                const pts = knockoutMatchPoints[p.slotId] !== undefined ? knockoutMatchPoints[p.slotId] : (actualSlot.status === 'FINISHED' ? 0 : '-');
+
+                html += `<tr>
+                            <td>${partidoText}</td>
+                            <td>${apuesta}</td>
+                            <td>${resultadoReal}</td>
+                            <td>${pts}</td>
+                         </tr>`;
             });
-            html += `</div>`;
+            html += `</tbody></table></div>`;
         }
         
         roundDiv.innerHTML = html;

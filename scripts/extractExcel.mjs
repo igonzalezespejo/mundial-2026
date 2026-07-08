@@ -123,61 +123,65 @@ async function extract() {
     checkPrivacy(displayName, `Display Name in sheet ${sheetName}`);
     participants.push({ participantId: sheetName, sheetName, displayName, source: "excel" });
 
+    const rowMap = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'excel_row_match_map.json'), 'utf8'));
+    
     // --- PHASE 1: GROUP STAGE ---
-    let matchCounter = 0;
-    let lastGroupRowIndex = 3;
     const pGroupPreds = [];
+    let lastGroupRowIndex = 0;
     
     for (let i = 4; i < data.length; i++) {
-      if (matchCounter >= 72) break;
       const row = data[i];
       if (!row) continue;
       
-      const homeTeam = cellText(row[2]);
-      const awayTeam = cellText(row[6]);
-      if (!homeTeam || !awayTeam || homeTeam === "Home" || homeTeam === "Visitante" || homeTeam.includes("Fase de Grupos")) continue;
-      
-      const matchNum = matchCounter + 1;
-      const matchId = `GROUP-${String(matchNum).padStart(3, '0')}`;
-      const excelDate = row[1];
-      const parsedDates = typeof excelDate === 'number' ? parseExcelDate(excelDate) : { date: cellText(excelDate), time: null, dateTime: null };
-      const realHomeGoals = row[7];
-      const realAwayGoals = row[8];
-      
-      if (!matchesMap.has(matchId)) {
-        let status = "PENDING";
-        if (realHomeGoals !== null && realAwayGoals !== null && cellText(realHomeGoals) !== '' && cellText(realAwayGoals) !== '') {
-            status = "FINISHED";
-            if (!resultsMap.has(matchId)) {
-                resultsMap.set(matchId, { matchId, homeGoals: Number(realHomeGoals), awayGoals: Number(realAwayGoals) });
+      const mapped = rowMap.find(m => m.sourceRow === i);
+      if (mapped && mapped.round === 'GROUP') {
+          lastGroupRowIndex = i;
+          const matchNum = mapped.matchNo;
+          const matchId = `MATCH-${String(matchNum).padStart(3, '0')}`;
+          const homeTeam = cellText(row[2]);
+          const awayTeam = cellText(row[6]);
+          if (!homeTeam || !awayTeam || homeTeam === "Home" || homeTeam === "Visitante" || homeTeam.includes("Fase de Grupos")) continue;
+          
+          const excelDate = row[1];
+          const parsedDates = typeof excelDate === 'number' ? parseExcelDate(excelDate) : { date: cellText(excelDate), time: null, dateTime: null };
+          const realHomeGoals = row[7];
+          const realAwayGoals = row[8];
+          
+          if (!matchesMap.has(matchId)) {
+            let status = "PENDING";
+            if (realHomeGoals !== null && realAwayGoals !== null && cellText(realHomeGoals) !== '' && cellText(realAwayGoals) !== '') {
+                status = "FINISHED";
+                if (!resultsMap.has(matchId)) {
+                    resultsMap.set(matchId, { matchId, homeGoals: Number(realHomeGoals), awayGoals: Number(realAwayGoals) });
+                }
             }
-        }
-        matchesMap.set(matchId, {
-          matchId, round: "GROUP", group: null, date: parsedDates.date, kickoffTime: parsedDates.time,
-          kickoffDateTime: parsedDates.dateTime, timezone: null, excelRawDate: excelDate, homeTeam, awayTeam, status
-        });
+            
+            const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
+            const groupChar = mapped.visualOrder ? groups[Math.floor((mapped.visualOrder - 1) / 6)] : null;
+
+            matchesMap.set(matchId, {
+              matchNo: matchNum, matchId, round: "GROUP", group: groupChar, date: parsedDates.date, kickoffTime: parsedDates.time,
+              kickoffDateTime: parsedDates.dateTime, timezone: null, excelRawDate: excelDate, homeTeam, awayTeam, status, sourceRow: i
+            });
+          }
+          
+          const predHome = cellText(row[3]);
+          const predAway = cellText(row[5]);
+          if (predHome !== '' && predAway !== '') {
+              const p = { participantId: sheetName, matchNo: matchNum, matchId, round: "GROUP", homeTeam, awayTeam, predictedHomeGoals: Number(predHome), predictedAwayGoals: Number(predAway), sourceRow: i };
+              predictions.push(p);
+              pGroupPreds.push(p);
+          }
+          
+          const matchPoints = cellText(row[9]);
+          if (matchPoints !== '') {
+              excelPointsSnapshot.push({ participantId: sheetName, matchId, points: Number(matchPoints) });
+          }
       }
-      
-      const predHome = cellText(row[3]);
-      const predAway = cellText(row[5]);
-      if (predHome !== '' && predAway !== '') {
-          const p = { participantId: sheetName, matchId, round: "GROUP", homeTeam, awayTeam, predictedHomeGoals: Number(predHome), predictedAwayGoals: Number(predAway) };
-          predictions.push(p);
-          pGroupPreds.push(p);
-      }
-      
-      const matchPoints = cellText(row[9]);
-      if (matchPoints !== '') {
-          excelPointsSnapshot.push({ participantId: sheetName, matchId, points: Number(matchPoints) });
-      }
-      matchCounter++;
-      lastGroupRowIndex = i;
     }
     excelPointsSnapshot.push({ participantId: sheetName, matchId: 'TOTAL_GROUP', points: totalPoints });
 
     // --- PHASE 2: KNOCKOUT STAGE ---
-    let currentSection = null;
-    let sectionIndex = 0;
     const participantKnockoutPreds = [];
 
     function findTeamCellInRow(row) {
@@ -195,116 +199,107 @@ async function extract() {
       return null;
     }
 
-    const sectionMarkers = {
-      'Dieciseisavos de final': 'R32',
-      'Octavos de final': 'R16',
-      'Cuartos de final': 'QF',
-      'Semifinales': 'SF',
-      '3er Puesto': 'THIRD_PLACE',
-      'Final': 'FINAL',
-      'CAMPEÓN': 'CHAMPION',
-      'Podium': 'PODIUM'
-    };
+    let podiumIndex = 0;
 
     for (let i = lastGroupRowIndex + 1; i < data.length; i++) {
       const row = data[i];
       if (!row) continue;
       
-      const colB = cellText(row[1]);
-      const colC = cellText(row[2]);
-      
-      const marker = sectionMarkers[colB] || sectionMarkers[colC];
-      if (marker) {
-        currentSection = marker;
-        sectionIndex = 0;
-        continue;
-      }
-      
-      if (!currentSection) continue;
-      
-      if (['R32', 'R16', 'QF', 'SF', 'THIRD_PLACE', 'FINAL'].includes(currentSection)) {
-        const homeTeam = cellText(row[2]); // Col C
-        const awayTeam = cellText(row[6]); // Col G
-        if (!homeTeam && !awayTeam) continue; 
-        
-        sectionIndex++;
-        let slotId = currentSection;
-        if (currentSection !== 'THIRD_PLACE' && currentSection !== 'FINAL') {
-          slotId = `${currentSection}-${String(sectionIndex).padStart(2, '0')}`;
-        }
-        
-        const excelDate = row[1];
-        const parsedDates = typeof excelDate === 'number' ? parseExcelDate(excelDate) : { date: cellText(excelDate), time: null, dateTime: null };
-        const predHome = cellText(row[3]);
-        const predAway = cellText(row[5]);
-        const points = cellText(row[9]);
-        
-        let predictedHomeGoals = predHome !== '' ? Number(predHome) : null;
-        let predictedAwayGoals = predAway !== '' ? Number(predAway) : null;
-        
-        const predObj = {
-          participantId: sheetName,
-          slotId,
-          round: currentSection,
-          date: parsedDates.date,
-          kickoffTime: parsedDates.time,
-          kickoffDateTime: parsedDates.dateTime,
-          predictedHomeTeam: homeTeam,
-          predictedAwayTeam: awayTeam,
-          predictedHomeGoals,
-          predictedAwayGoals,
-          predictedWinner: null,
-          sourceRow: i
-        };
+      const mapped = rowMap.find(m => m.sourceRow === i);
+      if (mapped) {
+          const matchNum = mapped.matchNo;
+          const currentSection = mapped.round;
+          const homeTeam = cellText(row[2]);
+          const awayTeam = cellText(row[6]);
+          if (!homeTeam && !awayTeam) continue; 
+          
+          let slotId = null;
+          const templateSlot = bracketTemplate.find(s => s.matchNo === matchNum);
+          if (templateSlot) {
+              slotId = templateSlot.slotId;
+          } else {
+              // fallback for Third Place / Final if missing matchNo in template somehow
+              if (currentSection === 'THIRD_PLACE') slotId = 'THIRD_PLACE';
+              else if (currentSection === 'FINAL') slotId = 'FINAL';
+          }
+          if (!slotId) continue;
+          
+          const excelDate = row[1];
+          const parsedDates = typeof excelDate === 'number' ? parseExcelDate(excelDate) : { date: cellText(excelDate), time: null, dateTime: null };
+          const predHome = cellText(row[3]);
+          const predAway = cellText(row[5]);
+          const points = cellText(row[9]);
+          
+          let predictedHomeGoals = predHome !== '' ? Number(predHome) : null;
+          let predictedAwayGoals = predAway !== '' ? Number(predAway) : null;
+          
+          const predObj = {
+            participantId: sheetName,
+            matchNo: matchNum,
+            slotId,
+            round: currentSection,
+            date: parsedDates.date,
+            kickoffTime: parsedDates.time,
+            kickoffDateTime: parsedDates.dateTime,
+            predictedHomeTeam: homeTeam,
+            predictedAwayTeam: awayTeam,
+            predictedHomeGoals,
+            predictedAwayGoals,
+            predictedWinner: null,
+            sourceRow: i
+          };
 
-        const templateSlot = bracketTemplate.find(s => s.slotId === slotId);
-        if (templateSlot) {
-            predObj.homeSource = templateSlot.homeSource;
-            predObj.awaySource = templateSlot.awaySource;
-            
-            // Reconstruct "fromWinnerOf" for later rounds
-            if (currentSection !== 'R32') {
-                const prevRoundSlots = bracketTemplate.filter(s => s.nextWinnerSlotId === slotId).map(s => s.slotId);
-                if (prevRoundSlots.length > 0) predObj.fromWinnerOf = prevRoundSlots;
-            }
-        }
+          if (templateSlot) {
+              predObj.homeSource = templateSlot.homeSource;
+              predObj.awaySource = templateSlot.awaySource;
+              
+              if (currentSection !== 'R32') {
+                  const prevRoundSlots = bracketTemplate.filter(s => s.nextWinnerSlotId === slotId).map(s => s.slotId);
+                  if (prevRoundSlots.length > 0) predObj.fromWinnerOf = prevRoundSlots;
+              }
+          }
 
-        participantKnockoutPreds.push(predObj);
+          participantKnockoutPreds.push(predObj);
 
-        if (points !== '') {
-          excelPointsSnapshot.push({ participantId: sheetName, matchId: slotId, points: Number(points) });
-        }
-        
-        if (sheetName === participantSheets[0]) {
-            knockoutMatchesMap.set(slotId, {
-                slotId, round: currentSection,
-                date: parsedDates.date, kickoffTime: parsedDates.time, kickoffDateTime: parsedDates.dateTime
-            });
-        }
-      } 
-      else if (currentSection === 'CHAMPION') {
-        const champTeam = findTeamCellInRow(row);
-        participantKnockoutPreds.push({
-          participantId: sheetName, slotId: 'CHAMPION', round: 'CHAMPION', team: champTeam || null, sourceRow: i
-        });
-        if (!champTeam) extractionWarnings.push(`CHAMPION_NOT_FOUND for ${sheetName} at row ${i}`);
-        
-        const points = cellText(row[9]);
-        if (points !== '') excelPointsSnapshot.push({ participantId: sheetName, matchId: 'CHAMPION', points: Number(points) });
-      }
-      else if (currentSection === 'PODIUM') {
-        const colA = cellText(row[0]);
-        const podiumTeam = cellText(row[1]);
-        if (colA === 'Primero' || colA === 'Segundo' || colA === 'Tercero') {
-            sectionIndex++;
-            participantKnockoutPreds.push({
-              participantId: sheetName, slotId: `PODIUM-${sectionIndex}`, round: 'PODIUM', position: colA, team: podiumTeam, sourceRow: i
-            });
-        }
+          if (points !== '') {
+            excelPointsSnapshot.push({ participantId: sheetName, matchId: slotId, points: Number(points) });
+          }
+          
+          if (sheetName === participantSheets[0]) {
+              knockoutMatchesMap.set(slotId, {
+                  matchNo: matchNum, slotId, round: currentSection,
+                  date: parsedDates.date, kickoffTime: parsedDates.time, kickoffDateTime: parsedDates.dateTime
+              });
+          }
+      } else {
+          // CHAMPION and PODIUM are not mapped by matchNo
+          const colB = cellText(row[1]);
+          const colC = cellText(row[2]);
+          if (colB === 'CAMPEÓN' || colC === 'CAMPEÓN') {
+              const nextRow = data[i + 1] || [];
+              const champTeam = findTeamCellInRow(nextRow);
+              participantKnockoutPreds.push({
+                participantId: sheetName, slotId: 'CHAMPION', round: 'CHAMPION', team: champTeam || null, sourceRow: i + 1
+              });
+              if (!champTeam) extractionWarnings.push(`CHAMPION_NOT_FOUND for ${sheetName} at row ${i + 1}`);
+              
+              const points = cellText(nextRow[9]) || cellText(row[9]);
+              if (points !== '') excelPointsSnapshot.push({ participantId: sheetName, matchId: 'CHAMPION', points: Number(points) });
+          } else {
+              const colA = cellText(row[0]);
+              const podiumTeam = cellText(row[1]);
+              if (colA === 'Primero' || colA === 'Segundo' || colA === 'Tercero') {
+                  podiumIndex++;
+                  participantKnockoutPreds.push({
+                    participantId: sheetName, slotId: `PODIUM-${podiumIndex}`, round: 'PODIUM', position: colA, team: podiumTeam, sourceRow: i
+                  });
+              }
+          }
       }
     }
 
-    const pStandings = computeGroupStandings(pGroupPreds, Array.from(matchesMap.values()), participantKnockoutPreds, bracketTemplate);
+    const pGroupMatches = Array.from(matchesMap.values()).sort((a, b) => a.matchNo - b.matchNo);
+    const pStandings = computeGroupStandings(pGroupPreds, pGroupMatches, participantKnockoutPreds, bracketTemplate);
     const pStandingsObj = { participantId: sheetName, standings: pStandings };
     
     // Resolve Best Thirds
@@ -395,13 +390,13 @@ async function extract() {
   fs.writeFileSync(path.join(DATA_DIR, 'group_standings_predictions.json'), JSON.stringify(allGroupStandingsPredictions, null, 2));
   fs.writeFileSync(path.join(DATA_DIR, 'actual_knockout_bracket.json'), JSON.stringify(actualKnockoutBracket, null, 2));
 
-  // Compute actual group standings
   const actualResultsAsPreds = Array.from(resultsMap.values()).map(r => ({
       matchId: r.matchId,
       predictedHomeGoals: r.homeGoals,
       predictedAwayGoals: r.awayGoals
   }));
-  const actualGroupStandings = computeGroupStandings(actualResultsAsPreds, Array.from(matchesMap.values()), null, null);
+  const globalGroupMatches = Array.from(matchesMap.values()).sort((a,b) => a.matchNo - b.matchNo);
+  const actualGroupStandings = computeGroupStandings(actualResultsAsPreds, globalGroupMatches, null, null);
   fs.writeFileSync(path.join(DATA_DIR, 'group_standings_actual.json'), JSON.stringify(actualGroupStandings, null, 2));
 
   let pubStatus = 'OK';

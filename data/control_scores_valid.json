@@ -1,0 +1,722 @@
+[
+  {
+    "participantId": "Juan Ruiz Torres",
+    "displayName": "Juan Ruiz Torres",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 425,
+      "R32": 500,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 1005
+    }
+  },
+  {
+    "participantId": "La_Gran_Porra_De_Isra",
+    "displayName": "La_Gran_Porra_De_Isra",
+    "champion": "Francia",
+    "expected": {
+      "groupPoints": 375,
+      "R32": 470,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 925
+    }
+  },
+  {
+    "participantId": "Antequera",
+    "displayName": "Antequera",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 325,
+      "R32": 500,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 905
+    }
+  },
+  {
+    "participantId": "JMA",
+    "displayName": "JMA",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 385,
+      "R32": 440,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 905
+    }
+  },
+  {
+    "participantId": "Francisco Carrasco",
+    "displayName": "Francisco Carrasco",
+    "champion": "Brasil",
+    "expected": {
+      "groupPoints": 310,
+      "R32": 510,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 900
+    }
+  },
+  {
+    "participantId": "Javier Alcala",
+    "displayName": "Javier Alcala",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 290,
+      "R32": 490,
+      "R16": 120,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 900
+    }
+  },
+  {
+    "participantId": "Si Se Puede!",
+    "displayName": "Si Se Puede!",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 330,
+      "R32": 450,
+      "R16": 120,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 900
+    }
+  },
+  {
+    "participantId": "AMG",
+    "displayName": "AMG",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 300,
+      "R32": 500,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 880
+    }
+  },
+  {
+    "participantId": "La Italiana",
+    "displayName": "La Italiana",
+    "champion": "Portugal",
+    "expected": {
+      "groupPoints": 330,
+      "R32": 430,
+      "R16": 120,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 880
+    }
+  },
+  {
+    "participantId": "Kamikaze",
+    "displayName": "Kamikaze",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 325,
+      "R32": 470,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 875
+    }
+  },
+  {
+    "participantId": "Pablo López Ríos",
+    "displayName": "Pablo López Ríos",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 305,
+      "R32": 490,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 875
+    }
+  },
+  {
+    "participantId": "Er Nómina",
+    "displayName": "Er Nómina",
+    "champion": "Portugal",
+    "expected": {
+      "groupPoints": 320,
+      "R32": 470,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 870
+    }
+  },
+  {
+    "participantId": "Brioso",
+    "displayName": "Brioso",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 300,
+      "R32": 490,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 870
+    }
+  },
+  {
+    "participantId": "La Ceja de Carleto",
+    "displayName": "La Ceja de Carleto",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 280,
+      "R32": 510,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 870
+    }
+  },
+  {
+    "participantId": "Cristóbal López",
+    "displayName": "Cristóbal López",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 355,
+      "R32": 470,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 865
+    }
+  },
+  {
+    "participantId": "Manucostcorron",
+    "displayName": "Manucostcorron",
+    "champion": "Brasil",
+    "expected": {
+      "groupPoints": 355,
+      "R32": 470,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 865
+    }
+  },
+  {
+    "participantId": "Sporting La Carlota",
+    "displayName": "Sporting La Carlota",
+    "champion": "Brasil",
+    "expected": {
+      "groupPoints": 360,
+      "R32": 420,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 860
+    }
+  },
+  {
+    "participantId": "Estefania Becerra Garcia",
+    "displayName": "Estefania Becerra Garcia",
+    "champion": "Portugal",
+    "expected": {
+      "groupPoints": 330,
+      "R32": 470,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 840
+    }
+  },
+  {
+    "participantId": "GUARDIOLISMO",
+    "displayName": "GUARDIOLISMO",
+    "champion": "Francia",
+    "expected": {
+      "groupPoints": 375,
+      "R32": 420,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 835
+    }
+  },
+  {
+    "participantId": "Chema3D",
+    "displayName": "Chema3D",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 305,
+      "R32": 400,
+      "R16": 120,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 825
+    }
+  },
+  {
+    "participantId": "Frente Perolete",
+    "displayName": "Frente Perolete",
+    "champion": "Portugal",
+    "expected": {
+      "groupPoints": 340,
+      "R32": 400,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 820
+    }
+  },
+  {
+    "participantId": "Jugada Ganadora",
+    "displayName": "Jugada Ganadora",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 330,
+      "R32": 410,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 820
+    }
+  },
+  {
+    "participantId": "Jordim22",
+    "displayName": "Jordim22",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 355,
+      "R32": 420,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 815
+    }
+  },
+  {
+    "participantId": "José Manuel Álvarez de la Fuent",
+    "displayName": "José Manuel Álvarez de la Fuente",
+    "champion": "Portugal",
+    "expected": {
+      "groupPoints": 295,
+      "R32": 440,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 815
+    }
+  },
+  {
+    "participantId": "The Water MBA",
+    "displayName": "The Water MBA",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 295,
+      "R32": 440,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 815
+    }
+  },
+  {
+    "participantId": "raul pizarroso",
+    "displayName": "raul pizarroso",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 330,
+      "R32": 440,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 810
+    }
+  },
+  {
+    "participantId": "PAULA",
+    "displayName": "PAULA",
+    "champion": "Francia",
+    "expected": {
+      "groupPoints": 280,
+      "R32": 440,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 800
+    }
+  },
+  {
+    "participantId": "La mejor de electricidad",
+    "displayName": "La mejor de electricidad",
+    "champion": "Portugal",
+    "expected": {
+      "groupPoints": 315,
+      "R32": 400,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 795
+    }
+  },
+  {
+    "participantId": "Luigi \"EL EXTERNO\"",
+    "displayName": "Luigi \"EL EXTERNO\"",
+    "champion": "Portugal",
+    "expected": {
+      "groupPoints": 260,
+      "R32": 450,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 790
+    }
+  },
+  {
+    "participantId": "SPO",
+    "displayName": "SPO",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 260,
+      "R32": 450,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 790
+    }
+  },
+  {
+    "participantId": "Menuda_Porra_la_de_AHR",
+    "displayName": "Menuda_Porra_la_de_AHR",
+    "champion": "Portugal",
+    "expected": {
+      "groupPoints": 320,
+      "R32": 410,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 770
+    }
+  },
+  {
+    "participantId": "Amadeo Carboni",
+    "displayName": "Amadeo Carboni",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 310,
+      "R32": 410,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 760
+    }
+  },
+  {
+    "participantId": "COPASO",
+    "displayName": "COPASO",
+    "champion": "Francia",
+    "expected": {
+      "groupPoints": 300,
+      "R32": 420,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 760
+    }
+  },
+  {
+    "participantId": "SISEPUEDE2",
+    "displayName": "SISEPUEDE2",
+    "champion": "Francia",
+    "expected": {
+      "groupPoints": 280,
+      "R32": 380,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 740
+    }
+  },
+  {
+    "participantId": "Blanca",
+    "displayName": "Blanca",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 265,
+      "R32": 390,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 735
+    }
+  },
+  {
+    "participantId": "JOAQUIN",
+    "displayName": "JOAQUIN",
+    "champion": "Francia",
+    "expected": {
+      "groupPoints": 305,
+      "R32": 380,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 725
+    }
+  },
+  {
+    "participantId": "Los lunares",
+    "displayName": "Los lunares",
+    "champion": "Argentina",
+    "expected": {
+      "groupPoints": 305,
+      "R32": 380,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 725
+    }
+  },
+  {
+    "participantId": "Ana",
+    "displayName": "Ana",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 240,
+      "R32": 400,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 720
+    }
+  },
+  {
+    "participantId": "Jose Maria Diaz Antunez",
+    "displayName": "Jose Maria Diaz Antunez",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 240,
+      "R32": 430,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 710
+    }
+  },
+  {
+    "participantId": "Fran Delineación",
+    "displayName": "Fran Delineación",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 240,
+      "R32": 420,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 700
+    }
+  },
+  {
+    "participantId": "Pablo Molina Díaz",
+    "displayName": "Pablo Molina Díaz",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 285,
+      "R32": 370,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 695
+    }
+  },
+  {
+    "participantId": "BMR",
+    "displayName": "BMR",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 250,
+      "R32": 400,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 690
+    }
+  },
+  {
+    "participantId": "IreBetis",
+    "displayName": "IreBetis",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 250,
+      "R32": 380,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 670
+    }
+  },
+  {
+    "participantId": "Omar",
+    "displayName": "Omar",
+    "champion": "Francia",
+    "expected": {
+      "groupPoints": 260,
+      "R32": 370,
+      "R16": 40,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 670
+    }
+  },
+  {
+    "participantId": "PP",
+    "displayName": "PP",
+    "champion": "España",
+    "expected": {
+      "groupPoints": 240,
+      "R32": 350,
+      "R16": 80,
+      "QF": 0,
+      "SF": 0,
+      "THIRD_PLACE": 0,
+      "FINAL": 0,
+      "CHAMPION": 0,
+      "totalPoints": 670
+    }
+  }
+]

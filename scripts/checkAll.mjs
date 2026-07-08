@@ -2,8 +2,10 @@ import { execSync } from 'child_process';
 
 const commands = [
     'npm run extract',
+    'npm run build:results',
     'npm run validate',
     'npm run validate:knockout',
+    'npm run check:control',
     'npm run privacy',
     'npm run check:frontend',
     'npm test'

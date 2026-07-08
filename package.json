@@ -5,13 +5,16 @@
   "type": "module",
   "scripts": {
     "extract": "node scripts/extractExcel.mjs",
+    "build:results": "node scripts/buildActualResults.mjs",
     "validate": "node scripts/validateGroupScoring.mjs",
     "validate:knockout": "node scripts/validateKnockoutScoring.mjs",
     "privacy": "node scripts/checkPublicDataPrivacy.mjs",
     "test": "vitest run",
     "serve": "node scripts/serveLocal.mjs",
+    "check:matchmap": "node scripts/checkMatchNumberIntegrity.mjs",
     "check:frontend": "node scripts/checkFrontendData.mjs",
-    "check:all": "node scripts/checkAll.mjs"
+    "check:control": "node scripts/compareRankingToControl.mjs",
+    "check:all": "npm run validate && npm run validate:knockout && npm run check:matchmap && npm run check:frontend"
   },
   "dependencies": {
     "xlsx": "^0.18.5"

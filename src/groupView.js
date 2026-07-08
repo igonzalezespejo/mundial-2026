@@ -62,43 +62,51 @@ function renderGroupMatches(participantId) {
     const preds = appData.predictions.filter(p => p.participantId === participantId);
     if (!preds.length) return;
 
-    // Sort by matchId
     preds.sort((a,b) => a.matchId.localeCompare(b.matchId));
+
+    const rankingEntry = appData.ranking.find(r => r.participantId === participantId);
+    const groupMatchPoints = rankingEntry ? rankingEntry.groupMatchPoints : {};
 
     const table = document.createElement('div');
     table.className = 'table-container';
     
-    let html = `<table>
+    let html = `<table class="matches-table">
                     <thead>
                         <tr>
-                            <th>Partido</th>
-                            <th>Apuesta</th>
-                            <th>Resultado Real</th>
-                            <th>Puntos</th>
+                            <th>PARTIDO</th>
+                            <th>APUESTA</th>
+                            <th>RESULTADO REAL</th>
+                            <th>PUNTOS</th>
                         </tr>
                     </thead>
                     <tbody>`;
                     
     preds.forEach(p => {
-        // Need to find real match to show team names if possible, but matchId contains teams in group
-        // Real result
         const rMatch = appData.results.find(r => r.matchId === p.matchId);
-        
-        // Let's use match.json to get proper teams
         const matchInfo = appData.matches.find(m => m.matchId === p.matchId) || { homeTeam: p.matchId.split('-')[1], awayTeam: p.matchId.split('-')[2] };
 
-        let realScore = rMatch && rMatch.status === 'FINISHED' ? `${rMatch.homeGoals} - ${rMatch.awayGoals}` : '-';
+        let matchNumStr = matchInfo.matchNo ? String(matchInfo.matchNo).padStart(2, '0') : p.matchId.replace('MATCH-', '');
+        let groupStr = matchInfo.group ? `Grupo ${matchInfo.group}` : '';
+        let partidoText = `M${matchNumStr}` + (groupStr ? ` &middot; ${groupStr}` : '');
         
-        // Scoring status (approximate based on points)
-        // This participant might have points calculated in ranking.json? Actually we don't have individual match points in ranking.json.
-        // For visual, we can just guess or show if it matches.
-        // We will just show the scores.
+        let homeT = escapeHTML(matchInfo.homeTeam);
+        let awayT = escapeHTML(matchInfo.awayTeam);
         
+        let apuesta = `${homeT} ${p.predictedHomeGoals} - ${p.predictedAwayGoals} ${awayT}`;
+        
+        let resultadoReal = 'Pendiente';
+        const hasResult = rMatch && typeof rMatch.homeGoals === 'number' && typeof rMatch.awayGoals === 'number';
+        if (hasResult) {
+            resultadoReal = `${homeT} ${rMatch.homeGoals} - ${rMatch.awayGoals} ${awayT}`;
+        }
+        
+        const pts = groupMatchPoints[p.matchId] !== undefined ? groupMatchPoints[p.matchId] : (hasResult ? 0 : '-');
+
         html += `<tr>
-                    <td>${matchInfo.matchId} <br> <small>${escapeHTML(matchInfo.homeTeam)} vs ${escapeHTML(matchInfo.awayTeam)}</small></td>
-                    <td><strong>${p.predictedHomeGoals} - ${p.predictedAwayGoals}</strong></td>
-                    <td>${realScore}</td>
-                    <td>-</td>
+                    <td>${partidoText}</td>
+                    <td>${apuesta}</td>
+                    <td>${resultadoReal}</td>
+                    <td>${pts}</td>
                  </tr>`;
     });
     

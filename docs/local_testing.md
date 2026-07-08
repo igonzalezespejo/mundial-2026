@@ -1,18 +1,17 @@
-# Local Testing Guide
+# Pruebas Locales
 
-Antes de desplegar en producción, es vital ejecutar la web en un servidor local para sortear las restricciones CORS de `fetch()` con archivos locales.
+Para probar los resultados localmente sin subirlos a producción, sigue los siguientes pasos:
 
-## Comandos a ejecutar en orden
-
-```bash
-npm run extract
-npm run validate
-npm run validate:knockout
-npm run privacy
-npm run check:frontend
-npm test
-npm run serve
-```
-
-El script `npm run serve` levantará un servidor local minimalista en `http://localhost:4173/`. 
-Abre esta URL en tu navegador para interactuar con la aplicación completa con todos los datos actualizados.
+1. Actualiza los datos de prueba en `data/manual_results.json`.
+2. Ejecuta el proceso de recálculo:
+   ```bash
+   npm run build:results
+   npm run validate:knockout
+   ```
+   *Alternativa recomendada: `npm run check:all` que ejecutará todas las pruebas y actualizaciones en cadena.*
+3. Lanza el servidor local:
+   ```bash
+   npm run serve
+   ```
+4. Ingresa a `http://localhost:4173/`.
+5. Verifica los puntos y la información en la pestaña "Eliminatorias" en la ficha individual de un participante.

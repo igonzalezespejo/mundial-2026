@@ -15,20 +15,34 @@ export function calculateGlobalRanking(participants, groupPredictions, groupResu
     const pKnockPreds = knockoutPredictions.filter(p => p.participantId === pId);
     let totalKnockoutPoints = 0;
     let roundPoints = { R32: 0, R16: 0, QF: 0, SF: 0, THIRD_PLACE: 0, FINAL: 0, CHAMPION: 0 };
+    let knockoutMatchPoints = {};
 
     if (knockoutContext) {
+       if (knockoutContext.allParticipantStandings) {
+           const pSt = knockoutContext.allParticipantStandings.find(x => x.participantId === pId);
+           knockoutContext.participantStandings = pSt ? pSt.standings : null;
+       }
+
        const koScoring = scoreKnockoutParticipant(pKnockPreds, knockoutContext);
        totalKnockoutPoints = koScoring.totalKnockoutPoints;
        roundPoints = koScoring.roundPoints || roundPoints;
+       knockoutMatchPoints = koScoring.matchPoints || {};
     }
     
     const totalPoints = groupPts.totalPoints + totalKnockoutPoints;
+
+    const groupMatchPoints = {};
+    groupPts.matchScores.forEach(ms => {
+      groupMatchPoints[ms.matchId] = ms.points;
+    });
 
     ranking.push({
       participantId: pId,
       displayName: participant.displayName,
       groupPoints: groupPts.totalPoints,
+      groupMatchPoints,
       roundPoints,
+      knockoutMatchPoints,
       knockoutPoints: totalKnockoutPoints,
       totalPoints
     });

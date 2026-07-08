@@ -1,15 +1,11 @@
-# Next Steps
+# Próximos Pasos (Next Steps)
 
-Con la Fase 2 finalizada, estos son los siguientes pasos posibles para el proyecto:
+## Fase 5B: Automatización futura
 
-1. **Frontend UI (Fase 3):**
-   - Construir el frontend en HTML, CSS, y JS vanilla (o React/Vite si se desea, según la arquitectura estática elegida).
-   - Crear una interfaz para el `Ranking global de la porra`.
-   - Crear la `Ficha individual de cada participante` mostrando sus predicciones detalladas de grupos y bracket de eliminatorias.
-   - Mostrar estado de `Actualización de puntos` visual.
+Para el futuro, este flujo de actualización de resultados manuales puede automatizarse:
 
-2. **Despliegue a GitHub Pages:**
-   - Una vez la UI básica esté desarrollada, publicar `index.html` y asociar la carpeta `/data` para alimentar la web pública.
-   
-3. **Módulo de Actualización de Resultados Reales:**
-   - Crear un script o mecanismo manual (un JSON de resultados parciales) para volcar los resultados reales según avance el torneo sin depender del gran Excel de recolección.
+- **Evaluar API fiable** de resultados FIFA 2026.
+- **Crear script `fetchResults.mjs`**: Un script que descargue los datos de la API y genere el contenido para `manual_results.json` automáticamente, mapeando los IDs o nombres a los internos.
+- **Integrar GitHub Actions programado**: Un action que corra de forma programada (ej. cada hora o cada día al terminar jornada), ejecutando `fetchResults.mjs`, seguido de `npm run check:all` y, si pasa, haga un commit automático con los nuevos datos.
+- **Revisar nombres de equipos y mapping**: Como las APIs suelen usar distintas convenciones (ej. USA vs Estados Unidos, NED vs Países Bajos), crear un mapping robusto.
+- **Mantener fallback manual**: La automatización debe estar diseñada de forma que `manual_results.json` todavía se pueda editar a mano si la API se cae, tal cual se define en la Fase 5A.

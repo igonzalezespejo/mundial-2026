@@ -225,7 +225,7 @@
         "points": 7,
         "goalDifference": 3,
         "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "G",
@@ -234,7 +234,7 @@
         "points": 7,
         "goalDifference": 3,
         "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "G",
@@ -1709,20 +1709,20 @@
       {
         "group": "K",
         "position": "1K",
-        "team": "Colombia",
-        "points": 7,
-        "goalDifference": 5,
-        "goalsFor": 6,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "K",
-        "position": "2K",
         "team": "Portugal",
         "points": 7,
         "goalDifference": 5,
         "goalsFor": 6,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "K",
+        "position": "2K",
+        "team": "Colombia",
+        "points": 7,
+        "goalDifference": 5,
+        "goalsFor": 6,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "K",
@@ -3021,7 +3021,7 @@
         "points": 7,
         "goalDifference": 4,
         "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "J",
@@ -3030,7 +3030,7 @@
         "points": 7,
         "goalDifference": 4,
         "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "J",
@@ -3742,20 +3742,20 @@
       {
         "group": "E",
         "position": "2E",
-        "team": "Costa de Marfil",
-        "points": 4,
-        "goalDifference": 1,
-        "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "E",
-        "position": "3E",
         "team": "Ecuador",
         "points": 4,
         "goalDifference": 1,
         "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "E",
+        "position": "3E",
+        "team": "Costa de Marfil",
+        "points": 4,
+        "goalDifference": 1,
+        "goalsFor": 4,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "E",
@@ -3886,20 +3886,20 @@
       {
         "group": "I",
         "position": "2I",
-        "team": "Noruega",
-        "points": 4,
-        "goalDifference": 1,
-        "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "I",
-        "position": "3I",
         "team": "Senegal",
         "points": 4,
         "goalDifference": 1,
         "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "I",
+        "position": "3I",
+        "team": "Noruega",
+        "points": 4,
+        "goalDifference": 1,
+        "goalsFor": 5,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "I",
@@ -6157,7 +6157,7 @@
         "points": 7,
         "goalDifference": 4,
         "goalsFor": 7,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "J",
@@ -6166,7 +6166,7 @@
         "points": 7,
         "goalDifference": 4,
         "goalsFor": 7,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "J",
@@ -8222,20 +8222,20 @@
       {
         "group": "E",
         "position": "2E",
-        "team": "Costa de Marfil",
-        "points": 4,
-        "goalDifference": 1,
-        "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "E",
-        "position": "3E",
         "team": "Ecuador",
         "points": 4,
         "goalDifference": 1,
         "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "E",
+        "position": "3E",
+        "team": "Costa de Marfil",
+        "points": 4,
+        "goalDifference": 1,
+        "goalsFor": 4,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "E",
@@ -8334,7 +8334,7 @@
         "points": 4,
         "goalDifference": 0,
         "goalsFor": 3,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "H",
@@ -8343,7 +8343,7 @@
         "points": 4,
         "goalDifference": 0,
         "goalsFor": 3,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "H",
@@ -8366,20 +8366,20 @@
       {
         "group": "I",
         "position": "2I",
-        "team": "Noruega",
-        "points": 4,
-        "goalDifference": 1,
-        "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "I",
-        "position": "3I",
         "team": "Senegal",
         "points": 4,
         "goalDifference": 1,
         "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "I",
+        "position": "3I",
+        "team": "Noruega",
+        "points": 4,
+        "goalDifference": 1,
+        "goalsFor": 4,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "I",
@@ -12254,20 +12254,20 @@
       {
         "group": "E",
         "position": "2E",
-        "team": "Costa de Marfil",
-        "points": 4,
-        "goalDifference": 1,
-        "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "E",
-        "position": "3E",
         "team": "Ecuador",
         "points": 4,
         "goalDifference": 1,
         "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "E",
+        "position": "3E",
+        "team": "Costa de Marfil",
+        "points": 4,
+        "goalDifference": 1,
+        "goalsFor": 4,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "E",
@@ -12434,7 +12434,7 @@
       {
         "group": "J",
         "position": "2J",
-        "team": "Argelia",
+        "team": "Austria",
         "points": 4,
         "goalDifference": 0,
         "goalsFor": 3,
@@ -12443,7 +12443,7 @@
       {
         "group": "J",
         "position": "3J",
-        "team": "Austria",
+        "team": "Argelia",
         "points": 4,
         "goalDifference": 0,
         "goalsFor": 3,
@@ -12474,7 +12474,7 @@
         "points": 2,
         "goalDifference": -1,
         "goalsFor": 3,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "K",
@@ -12483,7 +12483,7 @@
         "points": 2,
         "goalDifference": -1,
         "goalsFor": 3,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "K",
@@ -12801,20 +12801,20 @@
       {
         "group": "H",
         "position": "1H",
-        "team": "España",
-        "points": 7,
-        "goalDifference": 4,
-        "goalsFor": 6,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "H",
-        "position": "2H",
         "team": "Uruguay",
         "points": 7,
         "goalDifference": 4,
         "goalsFor": 6,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "H",
+        "position": "2H",
+        "team": "España",
+        "points": 7,
+        "goalDifference": 4,
+        "goalsFor": 6,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "H",
@@ -13805,20 +13805,20 @@
       {
         "group": "K",
         "position": "1K",
-        "team": "Colombia",
-        "points": 7,
-        "goalDifference": 4,
-        "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "K",
-        "position": "2K",
         "team": "Portugal",
         "points": 7,
         "goalDifference": 4,
         "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "K",
+        "position": "2K",
+        "team": "Colombia",
+        "points": 7,
+        "goalDifference": 4,
+        "goalsFor": 5,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "K",
@@ -15086,20 +15086,20 @@
       {
         "group": "I",
         "position": "2I",
-        "team": "Francia",
-        "points": 6,
-        "goalDifference": 1,
-        "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "I",
-        "position": "3I",
         "team": "Senegal",
         "points": 6,
         "goalDifference": 1,
         "goalsFor": 5,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "I",
+        "position": "3I",
+        "team": "Francia",
+        "points": 6,
+        "goalDifference": 1,
+        "goalsFor": 5,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "I",
@@ -15489,20 +15489,20 @@
       {
         "group": "H",
         "position": "1H",
-        "team": "España",
-        "points": 7,
-        "goalDifference": 5,
-        "goalsFor": 7,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "H",
-        "position": "2H",
         "team": "Uruguay",
         "points": 7,
         "goalDifference": 5,
         "goalsFor": 7,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "H",
+        "position": "2H",
+        "team": "España",
+        "points": 7,
+        "goalDifference": 5,
+        "goalsFor": 7,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "H",
@@ -16653,20 +16653,20 @@
       {
         "group": "C",
         "position": "1C",
-        "team": "Brasil",
-        "points": 7,
-        "goalDifference": 5,
-        "goalsFor": 8,
-        "tieBreakSource": "fallback_warning"
-      },
-      {
-        "group": "C",
-        "position": "2C",
         "team": "Marruecos",
         "points": 7,
         "goalDifference": 5,
         "goalsFor": 8,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
+      },
+      {
+        "group": "C",
+        "position": "2C",
+        "team": "Brasil",
+        "points": 7,
+        "goalDifference": 5,
+        "goalsFor": 8,
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "C",
@@ -17330,7 +17330,7 @@
         "points": 4,
         "goalDifference": 1,
         "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "I",
@@ -17339,7 +17339,7 @@
         "points": 4,
         "goalDifference": 1,
         "goalsFor": 4,
-        "tieBreakSource": "fallback_warning"
+        "tieBreakSource": "extracted_knockout_slot"
       },
       {
         "group": "I",

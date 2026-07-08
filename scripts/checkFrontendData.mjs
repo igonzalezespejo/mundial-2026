@@ -64,6 +64,46 @@ function main() {
                 }
             });
         }
+        
+        if (!r.groupMatchPoints) {
+            errors.push(`Ranking participant ${r.participantId} has no groupMatchPoints object`);
+        } else {
+            let groupSum = 0;
+            for (const key in r.groupMatchPoints) {
+                groupSum += r.groupMatchPoints[key];
+            }
+            if (groupSum !== r.groupPoints) {
+                errors.push(`Ranking participant ${r.participantId} groupMatchPoints sum (${groupSum}) does not match groupPoints (${r.groupPoints})`);
+            }
+        }
+        
+        if (!r.knockoutMatchPoints) {
+            errors.push(`Ranking participant ${r.participantId} has no knockoutMatchPoints object`);
+        } else {
+            // Validate sum for R32
+            let r32Sum = 0;
+            for (let i = 1; i <= 16; i++) {
+                const slot = `R32-${i.toString().padStart(2, '0')}`;
+                if (typeof r.knockoutMatchPoints[slot] === 'number') {
+                    r32Sum += r.knockoutMatchPoints[slot];
+                }
+            }
+            if (r32Sum !== (r.roundPoints.R32 || 0)) {
+                errors.push(`Ranking participant ${r.participantId} R32 sum (${r32Sum}) does not match roundPoints.R32 (${r.roundPoints.R32})`);
+            }
+
+            // Validate sum for R16
+            let r16Sum = 0;
+            for (let i = 1; i <= 8; i++) {
+                const slot = `R16-${i.toString().padStart(2, '0')}`;
+                if (typeof r.knockoutMatchPoints[slot] === 'number') {
+                    r16Sum += r.knockoutMatchPoints[slot];
+                }
+            }
+            if (r16Sum !== (r.roundPoints.R16 || 0)) {
+                errors.push(`Ranking participant ${r.participantId} R16 sum (${r16Sum}) does not match roundPoints.R16 (${r.roundPoints.R16})`);
+            }
+        }
     });
 
     if (groupPreds.length === 0) errors.push("No group predictions found");
@@ -81,6 +121,18 @@ function main() {
     const dataLoaderContent = fs.readFileSync(path.join(SRC_DIR, 'dataLoader.js'), 'utf8');
     if (dataLoaderContent.includes("fetch('/data/")) {
         errors.push("dataLoader.js contains absolute paths to /data/. Use relative paths (./data/).");
+    }
+
+    // 4. Import validation for appData in app.js
+    const appJsContent = fs.readFileSync(path.join(SRC_DIR, 'app.js'), 'utf8');
+    if (appJsContent.includes('appData')) {
+        const hasImport = appJsContent.includes("import {") && 
+                          appJsContent.includes("appData") && 
+                          appJsContent.includes("dataLoader.js");
+        const exactMatch = /import\s+{[^}]*appData[^}]*}\s+from\s+['"].*dataLoader\.js['"]/.test(appJsContent);
+        if (!exactMatch) {
+            errors.push("src/app.js uses appData but does not import it correctly from dataLoader.js");
+        }
     }
 
     if (errors.length > 0) {

@@ -58,8 +58,8 @@ async function checkPrivacy() {
 
     const urlMatches = content.match(piiRegexes.url) || [];
     for (const match of urlMatches) {
-        if (!match.includes('github.com')) { // ignore github or safe URLs
-            criticalFindings.push(`[URL] in ${path.basename(filePath)}`);
+        if (!match.includes('github.com') && !match.includes('github.io') && !match.includes('localhost') && !match.includes('127.0.0.1')) { // ignore safe URLs
+            criticalFindings.push(`[URL] in ${path.basename(filePath)}: ${match}`);
         }
     }
   }

@@ -1,6 +1,6 @@
 {
-  "status": "OK_WITH_PENDING_RESULTS",
-  "usesRealKnockoutData": false,
+  "status": "OK",
+  "usesRealKnockoutData": true,
   "usesParticipantAsProxy": false,
   "templateLoaded": true,
   "thirdPlaceMatrixLoaded": true,

@@ -1,6 +1,8 @@
+import { normalizeTeamName } from './teamAliases.js';
+
 export function scoreChampion(predictedChamp, actualChamp) {
   if (!predictedChamp || !actualChamp) return 0;
-  return predictedChamp.toLowerCase() === actualChamp.toLowerCase() ? 400 : 0;
+  return normalizeTeamName(predictedChamp).toLowerCase() === normalizeTeamName(actualChamp).toLowerCase() ? 400 : 0;
 }
 
 export function scoreKnockoutParticipant(participantPredictions, actualKnockoutContext) {
@@ -20,23 +22,30 @@ export function scoreKnockoutParticipant(participantPredictions, actualKnockoutC
       if (match.status === 'PENDING') continue;
       
       if (!teamsByRound[match.round]) teamsByRound[match.round] = new Set();
-      if (match.homeTeam) teamsByRound[match.round].add(match.homeTeam);
-      if (match.awayTeam) teamsByRound[match.round].add(match.awayTeam);
+      if (match.homeTeam) teamsByRound[match.round].add(normalizeTeamName(match.homeTeam));
+      if (match.awayTeam) teamsByRound[match.round].add(normalizeTeamName(match.awayTeam));
   }
 
   const getPointsDef = (round) => {
       switch (round) {
           case 'R32': return { base: 10, exactPos: 10, bonus: 20 };
-          case 'R16': return { base: 40, exactPos: 0, bonus: 40 };
-          case 'QF':  return { base: 60, exactPos: 0, bonus: 60 };
-          case 'SF':  return { base: 80, exactPos: 0, bonus: 80 };
-          case 'THIRD_PLACE': return { base: 100, exactPos: 0, bonus: 100 };
-          case 'FINAL': return { base: 150, exactPos: 0, bonus: 150 };
+          case 'R16': return { base: 40, exactPos: 0, bonus: 20 };
+          case 'QF':  return { base: 60, exactPos: 0, bonus: 20 };
+          case 'SF':  return { base: 80, exactPos: 0, bonus: 20 };
+          case 'THIRD_PLACE': return { base: 100, exactPos: 0, bonus: 20 };
+          case 'FINAL': return { base: 150, exactPos: 0, bonus: 20 };
           default: return null;
       }
   };
 
   let predictedChamp = null;
+
+  const participantTeamsByRound = {};
+  for (const p of participantPredictions) {
+      if (!participantTeamsByRound[p.round]) participantTeamsByRound[p.round] = new Set();
+      if (p.predictedHomeTeam) participantTeamsByRound[p.round].add(normalizeTeamName(p.predictedHomeTeam));
+      if (p.predictedAwayTeam) participantTeamsByRound[p.round].add(normalizeTeamName(p.predictedAwayTeam));
+  }
 
   for (const pred of participantPredictions) {
       let pts = 0;
@@ -53,7 +62,7 @@ export function scoreKnockoutParticipant(participantPredictions, actualKnockoutC
       if (!def) continue;
 
       const actualSlot = actualKnockoutContext.matches[pred.slotId];
-      if (!actualSlot || actualSlot.status === 'PENDING') {
+      if (!actualSlot) {
           matchPoints[pred.slotId] = 0;
           continue;
       }
@@ -63,32 +72,63 @@ export function scoreKnockoutParticipant(participantPredictions, actualKnockoutC
       let homeExactPos = false;
       let awayExactPos = false;
 
-      // Base points for advancing to this round
-      if (pred.predictedHomeTeam) {
-          if (actualSlot.homeTeam === pred.predictedHomeTeam) {
-              pts += def.base + def.exactPos;
-              homeExactPos = true;
-          } else if (roundTeams.has(pred.predictedHomeTeam)) {
+      const predHome = normalizeTeamName(pred.predictedHomeTeam);
+      const predAway = normalizeTeamName(pred.predictedAwayTeam);
+      const actHome = normalizeTeamName(actualSlot.homeTeam);
+      const actAway = normalizeTeamName(actualSlot.awayTeam);
+
+      if (pred.round === 'R32') {
+          // Base points for advancing to this round
+          if (predHome) {
+              if (actHome === predHome) {
+                  pts += def.base + def.exactPos;
+                  homeExactPos = true;
+              } else if (roundTeams.has(predHome)) {
+                  pts += def.base;
+              }
+          }
+
+          if (predAway) {
+              if (actAway === predAway) {
+                  pts += def.base + def.exactPos;
+                  awayExactPos = true;
+              } else if (roundTeams.has(predAway)) {
+                  pts += def.base;
+              }
+          }
+
+          // Exact Matchup & Score Bonus
+          if (homeExactPos && awayExactPos) {
+              if (pred.predictedHomeGoals !== null && pred.predictedAwayGoals !== null &&
+                  actualSlot.homeGoals !== null && actualSlot.awayGoals !== null) {
+                  if (pred.predictedHomeGoals === actualSlot.homeGoals &&
+                      pred.predictedAwayGoals === actualSlot.awayGoals) {
+                      // Removed the condition to also predict the correct winner in case of penalties
+                      pts += def.bonus;
+                  }
+              }
+          }
+      } else {
+          // R16, QF, SF, THIRD_PLACE, FINAL
+          
+          const actualTeamsInSlot = new Set([actHome, actAway].filter(Boolean));
+
+          if (predHome && actualTeamsInSlot.has(predHome)) {
               pts += def.base;
           }
-      }
 
-      if (pred.predictedAwayTeam) {
-          if (actualSlot.awayTeam === pred.predictedAwayTeam) {
-              pts += def.base + def.exactPos;
-              awayExactPos = true;
-          } else if (roundTeams.has(pred.predictedAwayTeam)) {
+          if (predAway && actualTeamsInSlot.has(predAway) && predAway !== predHome) {
               pts += def.base;
           }
-      }
 
-      // Exact Matchup & Score Bonus
-      if (homeExactPos && awayExactPos) {
-          if (pred.predictedHomeGoals !== null && pred.predictedAwayGoals !== null &&
-              actualSlot.homeGoals !== null && actualSlot.awayGoals !== null) {
-              if (pred.predictedHomeGoals === actualSlot.homeGoals &&
-                  pred.predictedAwayGoals === actualSlot.awayGoals) {
-                  pts += def.bonus;
+          // Check exact matchup and score for bonus
+          if (predHome && predAway && actHome === predHome && actAway === predAway) {
+              if (pred.predictedHomeGoals !== null && pred.predictedAwayGoals !== null &&
+                  actualSlot.homeGoals !== null && actualSlot.awayGoals !== null) {
+                  if (pred.predictedHomeGoals === actualSlot.homeGoals &&
+                      pred.predictedAwayGoals === actualSlot.awayGoals) {
+                      pts += def.bonus;
+                  }
               }
           }
       }
@@ -105,3 +145,4 @@ export function scoreKnockoutParticipant(participantPredictions, actualKnockoutC
 
   return { totalKnockoutPoints, matchPoints, roundPoints };
 }
+

@@ -1,0 +1,626 @@
+[
+  {
+    "sourceRow": 5,
+    "matchNo": 1,
+    "round": "GROUP",
+    "visualOrder": 1
+  },
+  {
+    "sourceRow": 6,
+    "matchNo": 2,
+    "round": "GROUP",
+    "visualOrder": 2
+  },
+  {
+    "sourceRow": 7,
+    "matchNo": 25,
+    "round": "GROUP",
+    "visualOrder": 3
+  },
+  {
+    "sourceRow": 8,
+    "matchNo": 28,
+    "round": "GROUP",
+    "visualOrder": 4
+  },
+  {
+    "sourceRow": 9,
+    "matchNo": 53,
+    "round": "GROUP",
+    "visualOrder": 5
+  },
+  {
+    "sourceRow": 10,
+    "matchNo": 54,
+    "round": "GROUP",
+    "visualOrder": 6
+  },
+  {
+    "sourceRow": 11,
+    "matchNo": 3,
+    "round": "GROUP",
+    "visualOrder": 7
+  },
+  {
+    "sourceRow": 12,
+    "matchNo": 8,
+    "round": "GROUP",
+    "visualOrder": 8
+  },
+  {
+    "sourceRow": 13,
+    "matchNo": 26,
+    "round": "GROUP",
+    "visualOrder": 9
+  },
+  {
+    "sourceRow": 14,
+    "matchNo": 27,
+    "round": "GROUP",
+    "visualOrder": 10
+  },
+  {
+    "sourceRow": 15,
+    "matchNo": 51,
+    "round": "GROUP",
+    "visualOrder": 11
+  },
+  {
+    "sourceRow": 16,
+    "matchNo": 52,
+    "round": "GROUP",
+    "visualOrder": 12
+  },
+  {
+    "sourceRow": 17,
+    "matchNo": 7,
+    "round": "GROUP",
+    "visualOrder": 13
+  },
+  {
+    "sourceRow": 18,
+    "matchNo": 5,
+    "round": "GROUP",
+    "visualOrder": 14
+  },
+  {
+    "sourceRow": 19,
+    "matchNo": 30,
+    "round": "GROUP",
+    "visualOrder": 15
+  },
+  {
+    "sourceRow": 20,
+    "matchNo": 29,
+    "round": "GROUP",
+    "visualOrder": 16
+  },
+  {
+    "sourceRow": 21,
+    "matchNo": 49,
+    "round": "GROUP",
+    "visualOrder": 17
+  },
+  {
+    "sourceRow": 22,
+    "matchNo": 50,
+    "round": "GROUP",
+    "visualOrder": 18
+  },
+  {
+    "sourceRow": 23,
+    "matchNo": 4,
+    "round": "GROUP",
+    "visualOrder": 19
+  },
+  {
+    "sourceRow": 24,
+    "matchNo": 6,
+    "round": "GROUP",
+    "visualOrder": 20
+  },
+  {
+    "sourceRow": 25,
+    "matchNo": 32,
+    "round": "GROUP",
+    "visualOrder": 21
+  },
+  {
+    "sourceRow": 26,
+    "matchNo": 31,
+    "round": "GROUP",
+    "visualOrder": 22
+  },
+  {
+    "sourceRow": 27,
+    "matchNo": 59,
+    "round": "GROUP",
+    "visualOrder": 23
+  },
+  {
+    "sourceRow": 28,
+    "matchNo": 60,
+    "round": "GROUP",
+    "visualOrder": 24
+  },
+  {
+    "sourceRow": 29,
+    "matchNo": 10,
+    "round": "GROUP",
+    "visualOrder": 25
+  },
+  {
+    "sourceRow": 30,
+    "matchNo": 9,
+    "round": "GROUP",
+    "visualOrder": 26
+  },
+  {
+    "sourceRow": 31,
+    "matchNo": 33,
+    "round": "GROUP",
+    "visualOrder": 27
+  },
+  {
+    "sourceRow": 32,
+    "matchNo": 34,
+    "round": "GROUP",
+    "visualOrder": 28
+  },
+  {
+    "sourceRow": 33,
+    "matchNo": 55,
+    "round": "GROUP",
+    "visualOrder": 29
+  },
+  {
+    "sourceRow": 34,
+    "matchNo": 56,
+    "round": "GROUP",
+    "visualOrder": 30
+  },
+  {
+    "sourceRow": 35,
+    "matchNo": 11,
+    "round": "GROUP",
+    "visualOrder": 31
+  },
+  {
+    "sourceRow": 36,
+    "matchNo": 12,
+    "round": "GROUP",
+    "visualOrder": 32
+  },
+  {
+    "sourceRow": 37,
+    "matchNo": 35,
+    "round": "GROUP",
+    "visualOrder": 33
+  },
+  {
+    "sourceRow": 38,
+    "matchNo": 36,
+    "round": "GROUP",
+    "visualOrder": 34
+  },
+  {
+    "sourceRow": 39,
+    "matchNo": 57,
+    "round": "GROUP",
+    "visualOrder": 35
+  },
+  {
+    "sourceRow": 40,
+    "matchNo": 58,
+    "round": "GROUP",
+    "visualOrder": 36
+  },
+  {
+    "sourceRow": 41,
+    "matchNo": 16,
+    "round": "GROUP",
+    "visualOrder": 37
+  },
+  {
+    "sourceRow": 42,
+    "matchNo": 15,
+    "round": "GROUP",
+    "visualOrder": 38
+  },
+  {
+    "sourceRow": 43,
+    "matchNo": 39,
+    "round": "GROUP",
+    "visualOrder": 39
+  },
+  {
+    "sourceRow": 44,
+    "matchNo": 40,
+    "round": "GROUP",
+    "visualOrder": 40
+  },
+  {
+    "sourceRow": 45,
+    "matchNo": 63,
+    "round": "GROUP",
+    "visualOrder": 41
+  },
+  {
+    "sourceRow": 46,
+    "matchNo": 64,
+    "round": "GROUP",
+    "visualOrder": 42
+  },
+  {
+    "sourceRow": 47,
+    "matchNo": 14,
+    "round": "GROUP",
+    "visualOrder": 43
+  },
+  {
+    "sourceRow": 48,
+    "matchNo": 13,
+    "round": "GROUP",
+    "visualOrder": 44
+  },
+  {
+    "sourceRow": 49,
+    "matchNo": 38,
+    "round": "GROUP",
+    "visualOrder": 45
+  },
+  {
+    "sourceRow": 50,
+    "matchNo": 37,
+    "round": "GROUP",
+    "visualOrder": 46
+  },
+  {
+    "sourceRow": 51,
+    "matchNo": 65,
+    "round": "GROUP",
+    "visualOrder": 47
+  },
+  {
+    "sourceRow": 52,
+    "matchNo": 66,
+    "round": "GROUP",
+    "visualOrder": 48
+  },
+  {
+    "sourceRow": 53,
+    "matchNo": 17,
+    "round": "GROUP",
+    "visualOrder": 49
+  },
+  {
+    "sourceRow": 54,
+    "matchNo": 18,
+    "round": "GROUP",
+    "visualOrder": 50
+  },
+  {
+    "sourceRow": 55,
+    "matchNo": 42,
+    "round": "GROUP",
+    "visualOrder": 51
+  },
+  {
+    "sourceRow": 56,
+    "matchNo": 41,
+    "round": "GROUP",
+    "visualOrder": 52
+  },
+  {
+    "sourceRow": 57,
+    "matchNo": 61,
+    "round": "GROUP",
+    "visualOrder": 53
+  },
+  {
+    "sourceRow": 58,
+    "matchNo": 62,
+    "round": "GROUP",
+    "visualOrder": 54
+  },
+  {
+    "sourceRow": 59,
+    "matchNo": 19,
+    "round": "GROUP",
+    "visualOrder": 55
+  },
+  {
+    "sourceRow": 60,
+    "matchNo": 20,
+    "round": "GROUP",
+    "visualOrder": 56
+  },
+  {
+    "sourceRow": 61,
+    "matchNo": 43,
+    "round": "GROUP",
+    "visualOrder": 57
+  },
+  {
+    "sourceRow": 62,
+    "matchNo": 44,
+    "round": "GROUP",
+    "visualOrder": 58
+  },
+  {
+    "sourceRow": 63,
+    "matchNo": 69,
+    "round": "GROUP",
+    "visualOrder": 59
+  },
+  {
+    "sourceRow": 64,
+    "matchNo": 70,
+    "round": "GROUP",
+    "visualOrder": 60
+  },
+  {
+    "sourceRow": 65,
+    "matchNo": 23,
+    "round": "GROUP",
+    "visualOrder": 61
+  },
+  {
+    "sourceRow": 66,
+    "matchNo": 24,
+    "round": "GROUP",
+    "visualOrder": 62
+  },
+  {
+    "sourceRow": 67,
+    "matchNo": 47,
+    "round": "GROUP",
+    "visualOrder": 63
+  },
+  {
+    "sourceRow": 68,
+    "matchNo": 48,
+    "round": "GROUP",
+    "visualOrder": 64
+  },
+  {
+    "sourceRow": 69,
+    "matchNo": 71,
+    "round": "GROUP",
+    "visualOrder": 65
+  },
+  {
+    "sourceRow": 70,
+    "matchNo": 72,
+    "round": "GROUP",
+    "visualOrder": 66
+  },
+  {
+    "sourceRow": 71,
+    "matchNo": 22,
+    "round": "GROUP",
+    "visualOrder": 67
+  },
+  {
+    "sourceRow": 72,
+    "matchNo": 21,
+    "round": "GROUP",
+    "visualOrder": 68
+  },
+  {
+    "sourceRow": 73,
+    "matchNo": 45,
+    "round": "GROUP",
+    "visualOrder": 69
+  },
+  {
+    "sourceRow": 74,
+    "matchNo": 46,
+    "round": "GROUP",
+    "visualOrder": 70
+  },
+  {
+    "sourceRow": 75,
+    "matchNo": 67,
+    "round": "GROUP",
+    "visualOrder": 71
+  },
+  {
+    "sourceRow": 76,
+    "matchNo": 68,
+    "round": "GROUP",
+    "visualOrder": 72
+  },
+  {
+    "sourceRow": 78,
+    "matchNo": 73,
+    "round": "R32",
+    "visualOrder": 1
+  },
+  {
+    "sourceRow": 79,
+    "matchNo": 76,
+    "round": "R32",
+    "visualOrder": 2
+  },
+  {
+    "sourceRow": 80,
+    "matchNo": 74,
+    "round": "R32",
+    "visualOrder": 3
+  },
+  {
+    "sourceRow": 81,
+    "matchNo": 75,
+    "round": "R32",
+    "visualOrder": 4
+  },
+  {
+    "sourceRow": 82,
+    "matchNo": 78,
+    "round": "R32",
+    "visualOrder": 5
+  },
+  {
+    "sourceRow": 83,
+    "matchNo": 77,
+    "round": "R32",
+    "visualOrder": 6
+  },
+  {
+    "sourceRow": 84,
+    "matchNo": 79,
+    "round": "R32",
+    "visualOrder": 7
+  },
+  {
+    "sourceRow": 85,
+    "matchNo": 80,
+    "round": "R32",
+    "visualOrder": 8
+  },
+  {
+    "sourceRow": 86,
+    "matchNo": 82,
+    "round": "R32",
+    "visualOrder": 9
+  },
+  {
+    "sourceRow": 87,
+    "matchNo": 81,
+    "round": "R32",
+    "visualOrder": 10
+  },
+  {
+    "sourceRow": 88,
+    "matchNo": 84,
+    "round": "R32",
+    "visualOrder": 11
+  },
+  {
+    "sourceRow": 89,
+    "matchNo": 83,
+    "round": "R32",
+    "visualOrder": 12
+  },
+  {
+    "sourceRow": 90,
+    "matchNo": 85,
+    "round": "R32",
+    "visualOrder": 13
+  },
+  {
+    "sourceRow": 91,
+    "matchNo": 88,
+    "round": "R32",
+    "visualOrder": 14
+  },
+  {
+    "sourceRow": 92,
+    "matchNo": 86,
+    "round": "R32",
+    "visualOrder": 15
+  },
+  {
+    "sourceRow": 93,
+    "matchNo": 87,
+    "round": "R32",
+    "visualOrder": 16
+  },
+  {
+    "sourceRow": 95,
+    "matchNo": 90,
+    "round": "R16",
+    "visualOrder": 17
+  },
+  {
+    "sourceRow": 96,
+    "matchNo": 89,
+    "round": "R16",
+    "visualOrder": 18
+  },
+  {
+    "sourceRow": 97,
+    "matchNo": 91,
+    "round": "R16",
+    "visualOrder": 19
+  },
+  {
+    "sourceRow": 98,
+    "matchNo": 92,
+    "round": "R16",
+    "visualOrder": 20
+  },
+  {
+    "sourceRow": 99,
+    "matchNo": 93,
+    "round": "R16",
+    "visualOrder": 21
+  },
+  {
+    "sourceRow": 100,
+    "matchNo": 94,
+    "round": "R16",
+    "visualOrder": 22
+  },
+  {
+    "sourceRow": 101,
+    "matchNo": 95,
+    "round": "R16",
+    "visualOrder": 23
+  },
+  {
+    "sourceRow": 102,
+    "matchNo": 96,
+    "round": "R16",
+    "visualOrder": 24
+  },
+  {
+    "sourceRow": 104,
+    "matchNo": 97,
+    "round": "QF",
+    "visualOrder": 25
+  },
+  {
+    "sourceRow": 105,
+    "matchNo": 98,
+    "round": "QF",
+    "visualOrder": 26
+  },
+  {
+    "sourceRow": 106,
+    "matchNo": 99,
+    "round": "QF",
+    "visualOrder": 27
+  },
+  {
+    "sourceRow": 107,
+    "matchNo": 100,
+    "round": "QF",
+    "visualOrder": 28
+  },
+  {
+    "sourceRow": 109,
+    "matchNo": 101,
+    "round": "SF",
+    "visualOrder": 29
+  },
+  {
+    "sourceRow": 110,
+    "matchNo": 102,
+    "round": "SF",
+    "visualOrder": 30
+  },
+  {
+    "sourceRow": 112,
+    "matchNo": 103,
+    "round": "THIRD_PLACE",
+    "visualOrder": 31
+  },
+  {
+    "sourceRow": 114,
+    "matchNo": 104,
+    "round": "FINAL",
+    "visualOrder": 32
+  }
+]

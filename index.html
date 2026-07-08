@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porra Mundial 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
 </head>
 <body>
     <header class="app-header">
         <div class="header-content">
-            <h1>Porra Mundial 2026</h1>
-            <p class="subtitle">Ranking, apuestas y seguimiento en directo</p>
+            <div class="top-bar">
+                <div class="left-section">
+                    <div class="logo-container">
+                        <img src="logo/Gemini_Generated_Image_djxgmxdjxgmxdjxg.png" alt="Porra Mundial 2026 Logo" class="app-logo">
+                    </div>
+                    <div class="nav-buttons">
+                        <button id="nav-home" class="btn-nav active">INICIO</button>
+                        <button id="nav-progression" class="btn-nav">PROGRESIÓN</button>
+                    </div>
+                </div>
+                <div id="main-title-section" class="title-section">
+                    <h1>Porra Mundial 2026</h1>
+                    <p class="subtitle">Ranking, apuestas y seguimiento en directo</p>
+                </div>
+                <div id="header-participant-info" class="header-participant-info" style="display: none;">
+                </div>
+            </div>
             <div id="status-bar" class="status-bar">
                 <span>Cargando datos...</span>
             </div>
@@ -27,25 +46,43 @@
             <div class="filters">
                 <input type="text" id="search-participant" placeholder="Buscar participante..." class="search-input">
             </div>
-            <div class="table-container">
-                <table class="ranking-table">
-                    <thead>
-                        <tr>
-                            <th>Pos</th>
-                            <th>Participante</th>
-                            <th>Total</th>
-                            <th>Grupos</th>
-                            <th>16avos</th>
-                            <th>8os</th>
-                            <th>4os</th>
-                            <th>Semis</th>
-                            <th>3er</th>
-                            <th>Final</th>
-                            <th>Campeón</th>
-                        </tr>
-                    </thead>
-                    <tbody id="ranking-body"></tbody>
-                </table>
+            <div class="ranking-layout">
+                <div class="main-ranking">
+                    <div class="table-container">
+                        <table class="ranking-table">
+                            <thead>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th>Participante</th>
+                                    <th>Total</th>
+                                    <th>Grupos</th>
+                                    <th>16avos</th>
+                                    <th>8os</th>
+                                    <th>4os</th>
+                                    <th>Semis</th>
+                                    <th>3er</th>
+                                    <th>Final</th>
+                                    <th>Campeón</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ranking-body"></tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="side-rankings">
+                    <div class="card top10-card" id="top10-groups">
+                        <h3>TOP 10 GRUPOS</h3>
+                        <div class="top10-body"></div>
+                    </div>
+                    <div class="card top10-card" id="top10-r16">
+                        <h3>TOP 10 8os</h3>
+                        <div class="top10-body"></div>
+                    </div>
+                    <div class="card top10-card" id="top10-qf">
+                        <h3>TOP 10 4os</h3>
+                        <div class="top10-body"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </template>
@@ -53,9 +90,6 @@
     <template id="participant-template">
         <div class="participant-view">
             <button id="back-btn" class="btn-back">← Volver al Ranking</button>
-            <div id="participant-header" class="card participant-panel">
-                <!-- Se inyecta info del participante -->
-            </div>
 
             <div class="tabs">
                 <button class="tab-btn active" data-target="group-stage">Fase de Grupos</button>
@@ -69,6 +103,14 @@
 
             <div id="knockout-stage" class="tab-content">
                 <div id="knockout-bracket-container" class="bracket-list"></div>
+            </div>
+        </div>
+    </template>
+
+    <template id="progression-template">
+        <div class="progression-view">
+            <div class="card chart-card">
+                <div id="echarts-container" class="chart-container"></div>
             </div>
         </div>
     </template>

@@ -12,6 +12,7 @@ function main() {
     const participants = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'participants.json'), 'utf8'));
     const knockoutPreds = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'knockout_predictions.json'), 'utf8'));
     const actualKnockoutBracket = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'actual_knockout_bracket.json'), 'utf8'));
+    const actualGroupStandings = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'group_standings_actual.json'), 'utf8'));
     
     let templateLoaded = fs.existsSync(path.join(DATA_DIR, 'bracket_template_2026.json'));
     let thirdPlaceMatrixLoaded = fs.existsSync(path.join(DATA_DIR, 'third_place_matrix_2026.json'));
@@ -21,7 +22,8 @@ function main() {
     const actualContext = {
        matches: {},
        teamsByRound: { 'R16': new Set(), 'QF': new Set(), 'SF': new Set(), 'FINAL': new Set(), 'THIRD_PLACE': new Set() },
-       champion: null
+       champion: null,
+       actualStandings: actualGroupStandings
     };
     
     if (actualKnockoutBracket.matches) {
@@ -53,8 +55,16 @@ function main() {
     };
     
     // Test scoring just to make sure it doesn't crash
+    const allParticipantStandings = groupStandingsComputed ? JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'group_standings_predictions.json'), 'utf8')) : [];
+    actualContext.allParticipantStandings = allParticipantStandings;
+
     for (const p of participants) {
         const pPreds = knockoutPreds.filter(x => x.participantId === p.participantId);
+        
+        // Inject this participant's standings into context
+        const pSt = allParticipantStandings.find(x => x.participantId === p.participantId);
+        actualContext.participantStandings = pSt ? pSt.standings : null;
+
         scoreKnockoutParticipant(pPreds, actualContext);
     }
     

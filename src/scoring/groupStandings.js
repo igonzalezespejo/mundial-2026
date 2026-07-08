@@ -3,27 +3,29 @@ export function computeGroupStandings(groupPredictions, groupMatches, participan
     const groups = ['A','B','C','D','E','F','G','H','I','J','K','L'];
     
     // Initialize
-    for (let i = 0; i < 12; i++) {
-        const groupChar = groups[i];
+    for (const groupChar of groups) {
         standings[groupChar] = {};
-        // Find the 6 matches for this group (matches i*6 to i*6+5)
-        for (let j = 0; j < 6; j++) {
-            const m = groupMatches[i*6 + j];
-            if (!standings[groupChar][m.homeTeam]) standings[groupChar][m.homeTeam] = { team: m.homeTeam, group: groupChar, points: 0, goalsFor: 0, goalsAgainst: 0, goalDifference: 0 };
-            if (!standings[groupChar][m.awayTeam]) standings[groupChar][m.awayTeam] = { team: m.awayTeam, group: groupChar, points: 0, goalsFor: 0, goalsAgainst: 0, goalDifference: 0 };
-        }
+    }
+    
+    // Find the teams for each group
+    for (const m of groupMatches) {
+        const groupChar = m.group;
+        if (!groupChar || !standings[groupChar]) continue;
+        
+        if (!standings[groupChar][m.homeTeam]) standings[groupChar][m.homeTeam] = { team: m.homeTeam, group: groupChar, points: 0, goalsFor: 0, goalsAgainst: 0, goalDifference: 0 };
+        if (!standings[groupChar][m.awayTeam]) standings[groupChar][m.awayTeam] = { team: m.awayTeam, group: groupChar, points: 0, goalsFor: 0, goalsAgainst: 0, goalDifference: 0 };
     }
     
     // Tally points
     for (const pred of groupPredictions) {
         const match = groupMatches.find(m => m.matchId === pred.matchId);
-        if (!match) continue;
+        if (!match || !match.group) continue;
         
         const home = match.homeTeam;
         const away = match.awayTeam;
         const hg = pred.predictedHomeGoals;
         const ag = pred.predictedAwayGoals;
-        const g = groups[Math.floor((parseInt(pred.matchId.split('-')[1]) - 1) / 6)];
+        const g = match.group;
         
         if (hg === null || ag === null) continue; // Pending/Unpredicted
         

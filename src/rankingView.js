@@ -7,6 +7,7 @@ export function initRankingView() {
     if (!tbody) return;
 
     renderRanking(appData.ranking);
+    renderTop10List();
 
     const searchInput = document.getElementById('search-participant');
     if (searchInput) {
@@ -50,4 +51,45 @@ function renderRanking(rankingList) {
         `;
         tbody.appendChild(tr);
     });
+}
+
+function renderTop10List() {
+    const participants = appData.ranking || [];
+
+    // Top 10 Grupos
+    const topGroups = [...participants].sort((a, b) => (b.groupPoints || 0) - (a.groupPoints || 0)).slice(0, 10);
+    renderMiniTable('top10-groups', topGroups, p => p.groupPoints || 0);
+
+    // Top 10 8os (R16)
+    const topR16 = [...participants].sort((a, b) => ((b.roundPoints && b.roundPoints.R16) || 0) - ((a.roundPoints && a.roundPoints.R16) || 0)).slice(0, 10);
+    renderMiniTable('top10-r16', topR16, p => (p.roundPoints && p.roundPoints.R16) || 0);
+
+    // Top 10 4os (QF)
+    const topQF = [...participants].sort((a, b) => ((b.roundPoints && b.roundPoints.QF) || 0) - ((a.roundPoints && a.roundPoints.QF) || 0)).slice(0, 10);
+    renderMiniTable('top10-qf', topQF, p => (p.roundPoints && p.roundPoints.QF) || 0);
+}
+
+function renderMiniTable(containerId, list, pointsFn) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    
+    const body = container.querySelector('.top10-body');
+    if (!body) return;
+    
+    body.innerHTML = '';
+    const table = document.createElement('table');
+    table.className = 'top10-table';
+    
+    list.forEach((p, index) => {
+        const tr = document.createElement('tr');
+        tr.className = 'ranking-row';
+        tr.onclick = () => showParticipantView(p.participantId);
+        tr.innerHTML = `
+            <td style="width:24px; color:var(--text-secondary); font-weight:700;">${index + 1}</td>
+            <td><strong>${escapeHTML(p.displayName || p.participantId)}</strong></td>
+            <td style="text-align:right; font-weight:700; color:var(--accent)">${pointsFn(p)}</td>
+        `;
+        table.appendChild(tr);
+    });
+    body.appendChild(table);
 }
