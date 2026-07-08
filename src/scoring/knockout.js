@@ -111,13 +111,12 @@ export function scoreKnockoutParticipant(participantPredictions, actualKnockoutC
       } else {
           // R16, QF, SF, THIRD_PLACE, FINAL
           
-          const actualTeamsInSlot = new Set([actHome, actAway].filter(Boolean));
 
-          if (predHome && actualTeamsInSlot.has(predHome)) {
+          if (predHome && roundTeams.has(predHome)) {
               pts += def.base;
           }
 
-          if (predAway && actualTeamsInSlot.has(predAway) && predAway !== predHome) {
+          if (predAway && roundTeams.has(predAway) && predAway !== predHome) {
               pts += def.base;
           }
 

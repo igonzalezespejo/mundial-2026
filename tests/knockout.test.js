@@ -5,7 +5,7 @@ describe('Knockout Scoring Rules', () => {
     it('R32 perfecto suma 60', () => {
         const actualKnockoutContext = {
             matches: {
-                'R32-01': { slotId: 'R32-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
+                'R32-01': { round: 'R32', slotId: 'R32-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
             },
             teamsByRound: { 'R32': new Set(['A', 'B']) }
         };
@@ -17,7 +17,7 @@ describe('Knockout Scoring Rules', () => {
     it('R16 perfecto suma 120', () => {
         const actualKnockoutContext = {
             matches: {
-                'R16-01': { slotId: 'R16-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
+                'R16-01': { round: 'R16', slotId: 'R16-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
             },
             teamsByRound: { 'R16': new Set(['A', 'B']) }
         };
@@ -29,7 +29,7 @@ describe('Knockout Scoring Rules', () => {
     it('QF perfecto suma 180', () => {
         const actualKnockoutContext = {
             matches: {
-                'QF-01': { slotId: 'QF-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
+                'QF-01': { round: 'QF', slotId: 'QF-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
             },
             teamsByRound: { 'QF': new Set(['A', 'B']) }
         };
@@ -41,7 +41,7 @@ describe('Knockout Scoring Rules', () => {
     it('SF perfecto suma 240', () => {
         const actualKnockoutContext = {
             matches: {
-                'SF-01': { slotId: 'SF-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
+                'SF-01': { round: 'SF', slotId: 'SF-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
             },
             teamsByRound: { 'SF': new Set(['A', 'B']) }
         };
@@ -53,7 +53,7 @@ describe('Knockout Scoring Rules', () => {
     it('Final perfecta suma 450 (150+150+150), mas campeon', () => {
         const actualKnockoutContext = {
             matches: {
-                'FINAL': { slotId: 'FINAL', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
+                'FINAL': { round: 'FINAL', slotId: 'FINAL', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 2, awayGoals: 1 }
             },
             teamsByRound: { 'FINAL': new Set(['A', 'B']) },
             champion: 'A'
@@ -69,7 +69,7 @@ describe('Knockout Scoring Rules', () => {
     it('Penaltis no alteran el resultado', () => {
         const actualKnockoutContext = {
             matches: {
-                'R32-01': { slotId: 'R32-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 1, awayGoals: 1 }
+                'R32-01': { round: 'R32', slotId: 'R32-01', status: 'FINISHED', homeTeam: 'A', awayTeam: 'B', homeGoals: 1, awayGoals: 1 }
             },
             teamsByRound: { 'R32': new Set(['A', 'B']) }
         };
