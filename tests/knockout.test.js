@@ -79,4 +79,16 @@ describe('Knockout Scoring Rules', () => {
         const { totalKnockoutPoints } = scoreKnockoutParticipant(preds, actualKnockoutContext);
         expect(totalKnockoutPoints).toBe(60); 
     });
+    it('Suma puntos base si el partido esta PENDING pero se conocen los equipos', () => {
+        const actualKnockoutContext = {
+            matches: {
+                'QF-01': { round: 'QF', slotId: 'QF-01', status: 'PENDING', homeTeam: 'A', awayTeam: null, homeGoals: null, awayGoals: null }
+            },
+            teamsByRound: { 'QF': new Set(['A']) }
+        };
+        const preds = [{ round: 'QF', slotId: 'QF-01', predictedHomeTeam: 'A', predictedAwayTeam: 'B', predictedHomeGoals: 2, predictedAwayGoals: 1 }];
+        const { totalKnockoutPoints } = scoreKnockoutParticipant(preds, actualKnockoutContext);
+        // Deberia sumar los 60 puntos de QF por acertar que el equipo A esta en QF.
+        expect(totalKnockoutPoints).toBe(60); 
+    });
 });

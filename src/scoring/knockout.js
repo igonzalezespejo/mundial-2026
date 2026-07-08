@@ -19,7 +19,7 @@ export function scoreKnockoutParticipant(participantPredictions, actualKnockoutC
   const teamsByRound = {};
   for (const matchId in actualKnockoutContext.matches) {
       const match = actualKnockoutContext.matches[matchId];
-      if (match.status === 'PENDING') continue;
+      if (match.status === 'PENDING' && !match.homeTeam && !match.awayTeam) continue;
       
       if (!teamsByRound[match.round]) teamsByRound[match.round] = new Set();
       if (match.homeTeam) teamsByRound[match.round].add(normalizeTeamName(match.homeTeam));
