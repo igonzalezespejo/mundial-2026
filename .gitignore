@@ -3,3 +3,8 @@ node_modules/
 data_raw/
 *.xlsx
 .env
+
+# Scripts temporales e internos de prueba que no deben subir a GitHub
+scratch_*
+test_extract.mjs
+.run_*.ps1
