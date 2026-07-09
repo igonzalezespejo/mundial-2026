@@ -1,12 +1,12 @@
 {
   "summary": {
-    "participantsCount": 45,
+    "participantsCount": 46,
     "groupMatchesCount": 72,
     "resultsCount": 72,
-    "predictionsCount": 3240,
-    "participantTotalExactMatches": 45,
+    "predictionsCount": 3312,
+    "participantTotalExactMatches": 46,
     "participantTotalDiscrepancies": 0,
-    "perMatchExactMatches": 3240,
+    "perMatchExactMatches": 3312,
     "perMatchDiscrepancies": 0
   },
   "participantDetails": [
@@ -212,6 +212,12 @@
       "participantId": "Manucostcorron",
       "excelTotal": 355,
       "jsTotal": 355,
+      "diff": 0
+    },
+    {
+      "participantId": "Maripatri",
+      "excelTotal": 250,
+      "jsTotal": 250,
       "diff": 0
     },
     {

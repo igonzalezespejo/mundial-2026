@@ -68,7 +68,7 @@ describe('Extraction Results (Phase 1C)', () => {
       }
     });
 
-    it('each group match has exactly 45 predictions (one per participant)', () => {
+    it('each group match has exactly 1 prediction per participant', () => {
       for (const m of matches) {
         const matchPreds = predictions.filter(pred => pred.matchId === m.matchId);
         expect(matchPreds.length).toBe(participants.length);

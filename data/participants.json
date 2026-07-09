@@ -204,6 +204,12 @@
     "source": "excel"
   },
   {
+    "participantId": "Maripatri",
+    "sheetName": "Maripatri",
+    "displayName": "Maripatri",
+    "source": "excel"
+  },
+  {
     "participantId": "Los lunares",
     "sheetName": "Los lunares",
     "displayName": "Los lunares",

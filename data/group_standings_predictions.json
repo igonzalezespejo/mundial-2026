@@ -15232,6 +15232,454 @@
     }
   },
   {
+    "participantId": "Maripatri",
+    "standings": [
+      {
+        "group": "A",
+        "position": "1A",
+        "team": "Chequia",
+        "points": 7,
+        "goalDifference": 3,
+        "goalsFor": 5,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "A",
+        "position": "2A",
+        "team": "México",
+        "points": 5,
+        "goalDifference": 1,
+        "goalsFor": 3,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "A",
+        "position": "3A",
+        "team": "Corea del Sur",
+        "points": 4,
+        "goalDifference": 2,
+        "goalsFor": 5,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "A",
+        "position": "4A",
+        "team": "Sudáfrica",
+        "points": 0,
+        "goalDifference": -6,
+        "goalsFor": 0,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "B",
+        "position": "1B",
+        "team": "Suiza",
+        "points": 7,
+        "goalDifference": 2,
+        "goalsFor": 4,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "B",
+        "position": "2B",
+        "team": "Canadá",
+        "points": 5,
+        "goalDifference": 2,
+        "goalsFor": 6,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "B",
+        "position": "3B",
+        "team": "Bosnia y Herz.",
+        "points": 4,
+        "goalDifference": 2,
+        "goalsFor": 6,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "B",
+        "position": "4B",
+        "team": "Catar",
+        "points": 0,
+        "goalDifference": -6,
+        "goalsFor": 1,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "C",
+        "position": "1C",
+        "team": "Brasil",
+        "points": 7,
+        "goalDifference": 5,
+        "goalsFor": 7,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "C",
+        "position": "2C",
+        "team": "Marruecos",
+        "points": 7,
+        "goalDifference": 4,
+        "goalsFor": 7,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "C",
+        "position": "3C",
+        "team": "Escocia",
+        "points": 3,
+        "goalDifference": -1,
+        "goalsFor": 4,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "C",
+        "position": "4C",
+        "team": "Haití",
+        "points": 0,
+        "goalDifference": -8,
+        "goalsFor": 1,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "D",
+        "position": "1D",
+        "team": "Turquía",
+        "points": 9,
+        "goalDifference": 3,
+        "goalsFor": 4,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "D",
+        "position": "2D",
+        "team": "Estados Unidos",
+        "points": 6,
+        "goalDifference": 2,
+        "goalsFor": 4,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "D",
+        "position": "3D",
+        "team": "Australia",
+        "points": 1,
+        "goalDifference": -2,
+        "goalsFor": 2,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "D",
+        "position": "4D",
+        "team": "Paraguay",
+        "points": 1,
+        "goalDifference": -3,
+        "goalsFor": 2,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "E",
+        "position": "1E",
+        "team": "Ecuador",
+        "points": 7,
+        "goalDifference": 3,
+        "goalsFor": 6,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "E",
+        "position": "2E",
+        "team": "Alemania",
+        "points": 6,
+        "goalDifference": 2,
+        "goalsFor": 5,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "E",
+        "position": "3E",
+        "team": "Costa de Marfil",
+        "points": 4,
+        "goalDifference": 1,
+        "goalsFor": 4,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "E",
+        "position": "4E",
+        "team": "Curazao",
+        "points": 0,
+        "goalDifference": -6,
+        "goalsFor": 1,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "F",
+        "position": "1F",
+        "team": "Países Bajos",
+        "points": 7,
+        "goalDifference": 4,
+        "goalsFor": 6,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "F",
+        "position": "2F",
+        "team": "Japón",
+        "points": 7,
+        "goalDifference": 3,
+        "goalsFor": 5,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "F",
+        "position": "3F",
+        "team": "Suecia",
+        "points": 1,
+        "goalDifference": -3,
+        "goalsFor": 3,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "F",
+        "position": "4F",
+        "team": "Túnez",
+        "points": 1,
+        "goalDifference": -4,
+        "goalsFor": 3,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "G",
+        "position": "1G",
+        "team": "Bélgica",
+        "points": 9,
+        "goalDifference": 5,
+        "goalsFor": 7,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "G",
+        "position": "2G",
+        "team": "Egipto",
+        "points": 6,
+        "goalDifference": 1,
+        "goalsFor": 4,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "G",
+        "position": "3G",
+        "team": "Irán",
+        "points": 3,
+        "goalDifference": -1,
+        "goalsFor": 3,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "G",
+        "position": "4G",
+        "team": "Nueva Zelanda",
+        "points": 0,
+        "goalDifference": -5,
+        "goalsFor": 0,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "H",
+        "position": "1H",
+        "team": "España",
+        "points": 9,
+        "goalDifference": 8,
+        "goalsFor": 9,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "H",
+        "position": "2H",
+        "team": "Uruguay",
+        "points": 6,
+        "goalDifference": 1,
+        "goalsFor": 4,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "H",
+        "position": "3H",
+        "team": "Arabia Saudí",
+        "points": 3,
+        "goalDifference": -1,
+        "goalsFor": 5,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "H",
+        "position": "4H",
+        "team": "Cabo Verde",
+        "points": 0,
+        "goalDifference": -8,
+        "goalsFor": 1,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "I",
+        "position": "1I",
+        "team": "Francia",
+        "points": 7,
+        "goalDifference": 5,
+        "goalsFor": 7,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "I",
+        "position": "2I",
+        "team": "Senegal",
+        "points": 5,
+        "goalDifference": 2,
+        "goalsFor": 5,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "I",
+        "position": "3I",
+        "team": "Noruega",
+        "points": 4,
+        "goalDifference": 3,
+        "goalsFor": 8,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "I",
+        "position": "4I",
+        "team": "Irak",
+        "points": 0,
+        "goalDifference": -10,
+        "goalsFor": 1,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "J",
+        "position": "1J",
+        "team": "Argentina",
+        "points": 6,
+        "goalDifference": 1,
+        "goalsFor": 3,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "J",
+        "position": "2J",
+        "team": "Austria",
+        "points": 4,
+        "goalDifference": 2,
+        "goalsFor": 4,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "J",
+        "position": "3J",
+        "team": "Argelia",
+        "points": 4,
+        "goalDifference": 1,
+        "goalsFor": 3,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "J",
+        "position": "4J",
+        "team": "Jordania",
+        "points": 3,
+        "goalDifference": -4,
+        "goalsFor": 2,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "K",
+        "position": "1K",
+        "team": "Colombia",
+        "points": 7,
+        "goalDifference": 3,
+        "goalsFor": 5,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "K",
+        "position": "2K",
+        "team": "Portugal",
+        "points": 6,
+        "goalDifference": 5,
+        "goalsFor": 7,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "K",
+        "position": "3K",
+        "team": "R.D. Congo",
+        "points": 4,
+        "goalDifference": -2,
+        "goalsFor": 2,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "K",
+        "position": "4K",
+        "team": "Uzbekistán",
+        "points": 0,
+        "goalDifference": -6,
+        "goalsFor": 0,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "L",
+        "position": "1L",
+        "team": "Inglaterra",
+        "points": 9,
+        "goalDifference": 8,
+        "goalsFor": 12,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "L",
+        "position": "2L",
+        "team": "Croacia",
+        "points": 4,
+        "goalDifference": 1,
+        "goalsFor": 6,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "L",
+        "position": "3L",
+        "team": "Ghana",
+        "points": 4,
+        "goalDifference": 0,
+        "goalsFor": 6,
+        "tieBreakSource": "computed"
+      },
+      {
+        "group": "L",
+        "position": "4L",
+        "team": "Panamá",
+        "points": 0,
+        "goalDifference": -9,
+        "goalsFor": 0,
+        "tieBreakSource": "computed"
+      }
+    ],
+    "bestThirdsCombination": "ABEHIJKL",
+    "bestThirdsMapping": {
+      "3ABCDF": "E",
+      "3CDFGH": "J",
+      "3CEFHI": "B",
+      "3EHIJK": "A",
+      "3AEHIJ": "I",
+      "3BEFIJ": "H",
+      "3EFGIJ": "L",
+      "3DEIJL": "K"
+    }
+  },
+  {
     "participantId": "Los lunares",
     "standings": [
       {
