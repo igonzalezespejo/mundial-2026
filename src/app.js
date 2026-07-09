@@ -96,7 +96,7 @@ async function init() {
             const t = dateObj.toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit' });
             kbUpdate = `${d} ${t}`;
         }
-        statusBox.innerHTML = `Eliminatorias: ${kbStatus} &middot; actualizado ${kbUpdate}`;
+        statusBox.style.display = 'none';
         showRankingView();
         
         // Listeners for top nav buttons
