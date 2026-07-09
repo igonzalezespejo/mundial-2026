@@ -29,11 +29,11 @@ export function scoreKnockoutParticipant(participantPredictions, actualKnockoutC
   const getPointsDef = (round) => {
       switch (round) {
           case 'R32': return { base: 10, exactPos: 10, bonus: 20 };
-          case 'R16': return { base: 40, exactPos: 0, bonus: 20 };
-          case 'QF':  return { base: 60, exactPos: 0, bonus: 20 };
-          case 'SF':  return { base: 80, exactPos: 0, bonus: 20 };
-          case 'THIRD_PLACE': return { base: 100, exactPos: 0, bonus: 20 };
-          case 'FINAL': return { base: 150, exactPos: 0, bonus: 20 };
+          case 'R16': return { base: 40, exactPos: 0, bonus: 40 };
+          case 'QF':  return { base: 60, exactPos: 0, bonus: 60 };
+          case 'SF':  return { base: 80, exactPos: 0, bonus: 80 };
+          case 'THIRD_PLACE': return { base: 100, exactPos: 0, bonus: 100 };
+          case 'FINAL': return { base: 150, exactPos: 0, bonus: 150 };
           default: return null;
       }
   };

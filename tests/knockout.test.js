@@ -23,7 +23,7 @@ describe('Knockout Scoring Rules', () => {
         };
         const preds = [{ round: 'R16', slotId: 'R16-01', predictedHomeTeam: 'A', predictedAwayTeam: 'B', predictedHomeGoals: 2, predictedAwayGoals: 1 }];
         const { totalKnockoutPoints } = scoreKnockoutParticipant(preds, actualKnockoutContext);
-        expect(totalKnockoutPoints).toBe(100);
+        expect(totalKnockoutPoints).toBe(120);
     });
 
     it('QF perfecto suma 180', () => {
@@ -35,7 +35,7 @@ describe('Knockout Scoring Rules', () => {
         };
         const preds = [{ round: 'QF', slotId: 'QF-01', predictedHomeTeam: 'A', predictedAwayTeam: 'B', predictedHomeGoals: 2, predictedAwayGoals: 1 }];
         const { totalKnockoutPoints } = scoreKnockoutParticipant(preds, actualKnockoutContext);
-        expect(totalKnockoutPoints).toBe(140);
+        expect(totalKnockoutPoints).toBe(180);
     });
 
     it('SF perfecto suma 240', () => {
@@ -47,7 +47,7 @@ describe('Knockout Scoring Rules', () => {
         };
         const preds = [{ round: 'SF', slotId: 'SF-01', predictedHomeTeam: 'A', predictedAwayTeam: 'B', predictedHomeGoals: 2, predictedAwayGoals: 1 }];
         const { totalKnockoutPoints } = scoreKnockoutParticipant(preds, actualKnockoutContext);
-        expect(totalKnockoutPoints).toBe(180);
+        expect(totalKnockoutPoints).toBe(240);
     });
 
     it('Final perfecta suma 450 (150+150+150), mas campeon', () => {
@@ -63,7 +63,7 @@ describe('Knockout Scoring Rules', () => {
             { round: 'CHAMPION', team: 'A' }
         ];
         const { totalKnockoutPoints } = scoreKnockoutParticipant(preds, actualKnockoutContext);
-        expect(totalKnockoutPoints).toBe(720);
+        expect(totalKnockoutPoints).toBe(850);
     });
     
     it('Penaltis no alteran el resultado', () => {
