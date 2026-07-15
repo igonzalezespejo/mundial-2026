@@ -412,6 +412,19 @@
       "status": "FINISHED",
       "decidedByPenalties": false,
       "notes": ""
+    },
+    {
+      "slotId": "SF-02",
+      "matchNo": 102,
+      "round": "SF",
+      "homeTeam": "Inglaterra",
+      "awayTeam": "Argentina",
+      "homeGoals": 1,
+      "awayGoals": 2,
+      "winner": "Argentina",
+      "status": "FINISHED",
+      "decidedByPenalties": false,
+      "notes": ""
     }
   ],
   "champion": null
