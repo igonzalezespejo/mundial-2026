@@ -399,6 +399,19 @@
       "status": "FINISHED",
       "decidedByPenalties": false,
       "notes": ""
+    },
+    {
+      "slotId": "SF-01",
+      "matchNo": 101,
+      "round": "SF",
+      "homeTeam": "Francia",
+      "awayTeam": "España",
+      "homeGoals": 0,
+      "awayGoals": 2,
+      "winner": "España",
+      "status": "FINISHED",
+      "decidedByPenalties": false,
+      "notes": ""
     }
   ],
   "champion": null
