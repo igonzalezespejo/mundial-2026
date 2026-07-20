@@ -22,7 +22,7 @@ function main() {
     const actualContext = {
        matches: {},
        teamsByRound: { 'R16': new Set(), 'QF': new Set(), 'SF': new Set(), 'FINAL': new Set(), 'THIRD_PLACE': new Set() },
-       champion: null,
+       champion: actualKnockoutBracket.champion || null,
        actualStandings: actualGroupStandings
     };
     
