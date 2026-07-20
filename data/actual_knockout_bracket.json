@@ -1,5 +1,5 @@
 {
-  "status": "PARTIAL",
+  "status": "COMPLETE",
   "usesRealKnockoutData": true,
   "usesParticipantAsProxy": false,
   "updatedAt": "2026-07-07T23:00:00.000Z",
@@ -425,7 +425,33 @@
       "status": "FINISHED",
       "decidedByPenalties": false,
       "notes": ""
+    },
+    {
+      "slotId": "THIRD_PLACE",
+      "matchNo": 103,
+      "round": "THIRD_PLACE",
+      "homeTeam": "Francia",
+      "awayTeam": "Inglaterra",
+      "homeGoals": 4,
+      "awayGoals": 6,
+      "winner": "Inglaterra",
+      "status": "FINISHED",
+      "decidedByPenalties": false,
+      "notes": ""
+    },
+    {
+      "slotId": "FINAL",
+      "matchNo": 104,
+      "round": "FINAL",
+      "homeTeam": "España",
+      "awayTeam": "Argentina",
+      "homeGoals": 1,
+      "awayGoals": 0,
+      "winner": "España",
+      "status": "FINISHED",
+      "decidedByPenalties": false,
+      "notes": ""
     }
   ],
-  "champion": null
+  "champion": "España"
 }
