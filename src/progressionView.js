@@ -60,8 +60,18 @@ export function initProgressionView() {
         });
     }
 
-    // Dividir en 5 bloques para el eje X
-    const blockMatches = [[], [], [], [], []];
+    if (appData.actual_knockout_bracket && appData.actual_knockout_bracket.champion) {
+        playedMatches.push({
+            id: 'CHAMPION',
+            name: `Campeón (${appData.actual_knockout_bracket.champion})`,
+            matchNo: 999, // Siempre al final
+            type: 'KNOCKOUT',
+            round: 'CHAMPION'
+        });
+    }
+
+    // Dividir en 6 bloques para el eje X
+    const blockMatches = [[], [], [], [], [], []];
     playedMatches.sort((a, b) => a.matchNo - b.matchNo);
 
     playedMatches.forEach(m => {
@@ -69,6 +79,7 @@ export function initProgressionView() {
         else if (m.round === 'R32') blockMatches[1].push(m);
         else if (m.round === 'R16') blockMatches[2].push(m);
         else if (m.round === 'QF') blockMatches[3].push(m);
+        else if (m.round === 'CHAMPION') blockMatches[5].push(m);
         else blockMatches[4].push(m);
     });
 
@@ -192,7 +203,7 @@ export function initProgressionView() {
         xAxis: {
             type: 'value',
             min: 0,
-            max: 500,
+            max: 600,
             interval: 100,
             axisLabel: {
                 formatter: function (value) {
@@ -202,6 +213,7 @@ export function initProgressionView() {
                     if (value === 300) return '8avos';
                     if (value === 400) return '4tos';
                     if (value === 500) return 'Finales';
+                    if (value === 600) return 'Campeón';
                     return '';
                 },
                 color: '#64748b',
